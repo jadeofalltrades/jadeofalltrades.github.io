@@ -3,20 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abbott-Mickelson Designs Honeycomb</title>
+  <title>Honeycomb</title>
   <!-- css reset -->
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
   <!-- custom styles -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-  <section class="container">
+  <section class="container" id="abt">
     <!-- navigation -->
-    <nav class="top-nav" id="top">
+    <nav id="top">
       <a href="index.html">
-        <img src="images/PNG/logo-mark-dark.png" alt="logo" srcset="images/SVG/logo-mark-dark_1.svg"/>
+        <img class="top-logo" src="images/PNG/logo-mark-dark.png" alt="logo" srcset="images/SVG/logo-mark-dark_1.svg"/>
       </a>
       <section class="nav-links">
         <a href="project.html">Portfolio</a>
@@ -71,14 +73,14 @@
         <p>Research showed user frustration with: organizing, features, and cost. It also indicated that users wanted a service that gives them lots of options for storage, upload content from multiple devices, share and collaborate on content, and of course, is free to use. I let this data guide my decisions, because I wanted to make something that solved my users’ specific problems.</p>
       <h3>Personas</h3>
         <p>I interviewed some users to see what motivates them, and developed  personas to help guide my choices.</p>
-        <a href="images/PDF/user-personas.pdf">View personas ></a>
+        <a href="images/PDF/user-personas.pdf" class="re-link">View personas ></a>
         <img src="images/honeycomb-images/persona1mobile.png" alt="picture of woman smiling" srcset="images/honeycomb-images/hc-svg/persona1mobile.svg"/>
           <p>Marissa is always looking for new content on the web. She is frustrated by unfriendly UIs and poor organization, and would love an application that made sharing and saving easy to use, and easy to look at. </p>
         <img src="images/honeycomb-images/persona2mobile.png" alt="picture of man smiling" srcset="images/honeycomb-images/hc-svg/persona2mobile.svg"/>
           <p>Colby is a student always eager to collaborate on a project. He doesn’t like to spend a ton of time combing through his cloud for files, and just wants one app for all his sharing and storage needs.</p>
       <h3>Competitive Analysis</h3>
         <p>I also took a look at popular apps on the market to see what they were getting right, and maybe a few things that they could do better.</p>
-        <a href="images/PDF/swot-charts.pdf">View SWOT charts ></a>
+        <a href="images/PDF/swot-charts.pdf" class="re-link">View SWOT charts ></a>
         <img src="images/honeycomb-images/pinterest.png" alt="Pinterest badge" srcset="images/honeycomb-images/hc-svg/pinterest.svg"/>
         <img src="images/honeycomb-images/gdrive.png" alt="Google Drive badge" srcset="images/honeycomb-images/hc-svg/gdrive.svg"/>
         <img src="images/honeycomb-images/evernote.png" alt="Evernote badge" srcset="images/honeycomb-images/hc-svg/evernote.svg"/>
@@ -182,21 +184,25 @@
         <a href="#top">Back to top</a>
     </section>
     <!-- footer -->
-    <footer>
-      <div>
+    <footer style="background-color:#333734;">
         <ul class="link-list">
           <li>
-            <a href="https://www.linkedin.com/in/jade-mickelson">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jade-mickelson">
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a>
           </li>
           <li>
-            <a href="mailto:jade.elise.a@gmail.com">Mail</a>
+            <a href="mailto:jade.elise.a@gmail.com">
+              <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+            </a>
           </li>
           <li>
-            <a href="https://github.com/jadeofalltrades">Github</a>
+            <a href="https://github.com/jadeofalltrades">
+              <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+            </a>
           </li>
         </ul>
-        <p>© Jade Abbott-Mickelson 2020</p>
-      </div>
+        <p class="copyright">© Jade Abbott-Mickelson 2020</p>
     </footer>
   </section>
 </body>

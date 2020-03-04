@@ -8,51 +8,61 @@
     <!-- css reset -->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
 
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
     <!-- custom styles -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
   </head>
-  <body>
+  <body class=".homepage">
     <section class="container">
-      <nav class="top-nav">
-        <img class="top-logo" src="images/PNG/horiz-logo-light.png" alt="jade abbott-mickelson logo" srcset="images/SVG/horiz-logo-light.svg">
+    <!-- top nav -->
+      <nav class="top-nav" id="home-nav">
+        <img class="top-logo" src="images/PNG/logo-mark-light.png" alt="jade abbott-mickelson logo" srcset="images/SVG/logo-mark-light.svg">
         <section class="nav-links">
-          <a href="project.html">Portfolio</a>
-          <a href="about.html">About</a>
+          <a href="project.html" class="proj">Portfolio</a>
+          <a href="about.html" class="abt">About</a>
         </section>
       </nav>
+      <!-- hero -->
       <section class="hero">
-          <h1>Jade Abbott-Mickelson UX/UI Designer in Sacramento,CA</h1>
-          <h2>Welcome. I design user-driven experiences that are beautiful and functional.</h2>
-          <a href="about.html">More about me ></a>
+          <h1 class="headline">Jade Abbott-Mickelson UX/UI Designer in Sacramento,CA</h1>
+          <h2 class="by-line">Welcome. I design user-driven experiences that are beautiful and functional.</h2>
+          <a href="about.html" class="re-link">More about me ></a>
       </section>
+      <!-- portfolio work -->
       <section class="work-preview">
-          <h3>See My Work</h3>
           <section class="honeycomb">
-            <img src="images/honeycomb-images/honeycomb-logo.png" alt="honeycomb flower mark" srcset="images/SVG/honeycomb-logo.svg"/>
-            <div>
+            <img src="images/honeycomb-images/honeycomb-logo.png" alt="honeycomb flower mark" srcset="images/SVG/honeycomb-logo.svg" class="flwr"/>
+            <div class="desc">
               <h4>Honeycomb</h4>
               <p>Organization focused cloud storage solution. Made to make storing documents and content simple, so you don’t have to worry about it.</p>
-              <a href="project.html" class="button">See Case Study</a>
             </div>
+            <a href="project.html" class="button">See Case Study</a>
+          </section>
         </section>
-        </section>
-        <footer>
-          <div>
+        <!-- footer -->
+        <footer style="background-color:#333734;">
             <ul class="link-list">
               <li>
-                <a href="https://www.linkedin.com/in/jade-mickelson">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/jade-mickelson">
+                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
               </li>
               <li>
-                <a href="mailto:jade.elise.a@gmail.com">Mail</a>
+                <a href="mailto:jade.elise.a@gmail.com">
+                  <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+                </a>
               </li>
               <li>
-                <a href="https://github.com/jadeofalltrades">Github</a>
+                <a href="https://github.com/jadeofalltrades">
+                  <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                </a>
               </li>
             </ul>
-            <p>© Jade Abbott-Mickelson 2020</p>
-          </div>
+            <p class="copyright">© Jade Abbott-Mickelson 2020</p>
         </footer>
     </section>
   </body>

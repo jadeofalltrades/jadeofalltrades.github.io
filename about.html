@@ -6,13 +6,15 @@
   <title>About Page</title>
   <!-- css reset -->
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
   <!-- custom styles -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-  <section class="container">
+  <section class="container" id="abt">
     <!-- top nav -->
     <nav>
       <a href="index.html">
@@ -23,11 +25,14 @@
         <a href="about.html">About</a>
       </section>
     </nav>
-    <section class="about-text">
-    <h1>About</h1>
-      <img src="images/PNG/jade-pic.png" alt="picture of jade abbott-mickelson" srcset="images/SVG/jade-pic.svg"/>
-      <a href="images/PDF/Resume.pdf">See my resume ></a>
-      <h2>I am a UX/UI designer currently in Sacramento, CA, and I make products for people.</h2>
+    <section>
+      <section class="hero">
+        <h1>About</h1>
+          <img src="images/PNG/jade-pic.png" alt="picture of jade abbott-mickelson" srcset="images/SVG/jade-pic.svg" class="jade"/>
+            <a href="images/PDF/Resume.pdf" class="re-link">See my resume ></a>
+        <h2>I am a UX/UI designer currently in Sacramento, CA, and I make products for people.</h2>
+      </section>
+      <section class ="about-text">
         <h3>How I got here</h3>
           <p>I followed a nontraditional path to get to the field of design. I’ve always had an appreciation for highly functional and beautifully styled products, but instead of developing that appreciation and style  early on, I ended up following a more academic route.</p>
           <p>In 2015 I started making jewelry, a hobby that blossomed into a passion for design. I loved sketching pieces and then bringing them to life, and I wished I had a career where I could do just that.</p>
@@ -38,21 +43,25 @@
       <h2>Let's collaborate</h2>
         <a href="mailto:jade.elise.a@gmail.com">jade.elise.a@gmail.com</a>
     </section>
-    <footer>
-          <div>
-            <ul class="link-list">
-              <li>
-                <a href="https://www.linkedin.com/in/jade-mickelson">LinkedIn</a>
-              </li>
-              <li>
-                <a href="mailto:jade.elise.a@gmail.com">Mail</a>
-              </li>
-              <li>
-                <a href="https://github.com/jadeofalltrades">Github</a>
-              </li>
-            </ul>
-            <p>© Jade Abbott-Mickelson 2020</p>
-          </div>
+    <footer style="background-color:#333734;">
+        <ul class="link-list">
+          <li>
+            <a href="https://www.linkedin.com/in/jade-mickelson">
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:jade.elise.a@gmail.com">
+              <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jadeofalltrades">
+              <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">© Jade Abbott-Mickelson 2020</p>
     </footer>
   </section>
 </body>
