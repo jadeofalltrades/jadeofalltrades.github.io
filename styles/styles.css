@@ -23,34 +23,57 @@ jade #6aa991*/
   src:url(fonts/Mermaid.ttf);
   font-family:"Mermaid";
 }
+/* colors */
+a, .button, .by-line, .copyright, .headline, #hon .button, .link-list i, .nav-links {
+  color:#F9F9F9;
+}
 
-/* typography*/
-#abt{
+#abt, #hon{
   background:#ffffff;
 }
+#abt a, #abt h2, #hon a, #hon h2 {
+  color: #333734;
+}
+h2, h4, #hon h3, .re-link {
+  color:#4B816D;
+}
+/*typography*/
+a, h1, h2, h4, .nav-links {
+  font-family:"Moon-Light"
+}
+
+#abt h2, .by-line, .e-link, h3, li, p, .re-link {
+  font-family:"IBM Plex Serif", Georgia, serif;
+}
+
+.dm-sans {
+  font-family:"DM Sans"
+}
+.mermaid {
+  font-family:"Mermaid";
+}
+
+/*margins and padding */
+
+a {
+  font-size:1.4rem;
+  text-decoration:none;
+}
+
 #abt h2{
-  font-family:"IBM Plex Serif";
   font-size: 2rem;
-  color:#333734;
   font-weight:600;
   margin-bottom:3.6rem;
 }
 
-#abt a {
-  color: #333734;
-}
 #abt h1{
   margin:2.5rem 0;
 }
-.about-text{
-  margin-bottom:10rem;
-}
-.about-text > p{
-  line-height:145%;
-}
+
 #abt h3{
   margin:2.4rem 0 1rem 0;
 }
+
 #abt h4 {
   margin:6.4rem 0 2rem 0;
 }
@@ -58,95 +81,38 @@ jade #6aa991*/
 #abt .re-link{
   display:inline-block;
   width:75%;
-  color:#4b816d;
   font-size:2rem;
   margin-bottom:3.6rem;
 }
 
-.by-line, .re-link {
-  font-family:"IMB Plex Serif", Georgia, serif;
+.about-text{
+  margin-bottom:10rem;
+}
+.about-text > p{
+  line-height:145%;
+}
+
+.brand img .hifi img, .sandwf img, {
+  padding:2rem 1.6rem;
+}
+
+.button{
+  background-color:#4B816D;
+  box-shadow:0px 2px 2px #CECFCE;
+  font-family:"Moon-Bold";
+  font-size:1.6rem;
+  height:50px;
+  padding: 1.7rem 5rem;
+  width:265px;
 }
 
 .by-line {
-  color: #f9f9f9;
   font-size: 1.8rem;
   font-weight:500;
   line-height:2.1rem;
   padding-bottom: 1rem;
   padding-right:2rem;
 }
-.copyright{
-  font-family:"Moon-Bold";
-  font-size:1.2rem;
-  color:#f9f9f9;
-  margin:auto;
-  padding-bottom: 1.5rem;
-  text-align:center;
-  width:75%;
-}
-
-.dm-sans {
-  font-family:"DM Sans"
-}
-
-figcaption{
-  font-size:1.4rem;
-}
-
-h2,h4 {
-  font-family:"Moon-Light";
-}
-
-h1{
-  font-family:"Moon-Light";
-  font-size:4rem;
-  text-align:left;
-  display:inline-block;
-}
-h2{
-  color: hsla(158, 26%, 40%, 1.0);
-  font-size: 30px;
-}
-h3{
-  font-size:2rem;
-  font-family:"IBM Plex Serif";
-  font-weight:500;
-}
-h4{
-  color: hsla(158, 26%, 40%, 1.0);
-  font-size:2rem;
-}
-
-.headline {
-  color: #F9F9F9;
-  font-size:2.4rem;
-  line-height: 2.8rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-html{
-  font-size:10px;
-  height:100vh;
-}
-
-p{
-  font-family: "IBM Plex Serif", Georgia, Serif;
-  font-weight: 400;
-  font-size:1.6rem;
-  line-height:1.3;
-  margin:1.6rem 0;
-}
-.re-link{
-  font-weight:600;
-  color:#71AD96;
-}
-
-/* structure */
-/*
-body {
-  height:100vh;
-}*/
 
 .container{
   /*height:100vh;*/
@@ -155,84 +121,13 @@ body {
   background-image: linear-gradient(#333734,#3C403D, #F9F9F9 90%);
   }
 
-#hon{
-  background:#ffffff;
-  text-align:center;
-}
-#hon h2{
-  font-family:"Moon-Light";
-  font-size: 2.8rem;
-  color:#333734;
-  margin:7.5rem 0 4.2rem 0;
-}
-
-
-#hon a {
-  color: #333734;
-}
-#hon .button {
-  color:#F9F9F9;
-  padding:1.6rem 2rem;
-}
-#hon h1{
-  margin:2.5rem 0;
-}
-#hon h3{
-  margin:3.2rem 0;
+.copyright{
   font-family:"Moon-Bold";
-  font-size: 2rem;
-  color:#4B816D;
-}
-#hon h4 {
-  margin:2.4rem 0 2rem 0;
-  font-size:1.8rem;
-}
-
-#hon .re-link{
-  display:inline-block;
+  font-size:1.2rem;
+  margin:auto;
+  padding-bottom: 1.5rem;
+  text-align:center;
   width:75%;
-  color:#4b816d;
-  font-size:1.4rem;
-  margin-bottom:3.6rem;
-}
-
-main ul{
-  font-size:1.6rem;
-  margin: 1rem 1.6rem;
-}
-main p {
-  padding:0.8rem;
-  margin: 0 1.6rem;
-}
-
-i {
-  padding:1rem;
-}
-.proj-hero img {
-  margin: 2rem 0;
-}
-
-.e-link {
-  font-family: "IBM Plex Serif";
-  font-size:1.8rem;
-  font-weight:600;
-
-}
-
-figure{
-  margin:3.6rem 1.6rem;
-  padding:0.8rem;
-}
-figure img {
-  margin:0.8rem 1.2rem;
-}
-
-
-footer {
-    text-align:center;
-    background-color: #333734;
-    padding:0 2rem;
-    width:100%;
 }
 .discovery > .icon{
   margin-bottom:3rem;
@@ -245,51 +140,178 @@ footer {
 .discovery > .per{
   width:45%;
 }
-.hifi img, .sandwf img, .brand img {
-  padding:2rem 1.6rem;
+
+.e-link {
+  font-size:1.8rem;
+  font-weight:600;
+}
+
+figcaption{
+  font-size:1.4rem;
+}
+
+figure{
+  margin:3.6rem 1.6rem;
+  padding:0.8rem;
+}
+figure img {
+  margin:0.8rem 1.2rem;
+}
+
+.flwr{
+  height:9.443rem;
+  width:9.024rem;
+  margin:3rem;
+}
+
+footer {
+    text-align:center;
+    background-color: #333734;
+    padding:0 2rem;
+    width:100%;
+}
+
+h1{
+  font-size:4rem;
+  text-align:left;
+  display:inline-block;
+}
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size:2rem;
+  font-weight:500;
+}
+h4{
+  font-size:1.8rem;
+}
+
+.headline {
+  font-size:2.4rem;
+  line-height: 2.8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#hon{
+  text-align:center;
+}
+
+#hon .button {
+  padding:1.6rem 2rem;
+}
+
+#hon h1{
+  margin:2.5rem 0;
+}
+
+#hon h2{
+  font-size: 2.8rem;
+  margin:7.5rem 0 4.2rem 0;
+}
+
+#hon h3{
+  margin:3.2rem 0;
+  font-family:"Moon-Bold";
+  font-size: 2rem;
+}
+#hon h4 {
+  margin:2.4rem 0 2rem 0;
+  font-size:1.8rem;
+}
+
+#hon .re-link{
+  display:inline-block;
+  width:75%;
+  font-size:1.4rem;
+  margin-bottom:3.6rem;
+}
+
+.honeycomb{
+  background-color:	hsla(0, 0%, 98%, 1.0);
+  box-shadow:0px 4px 2px #CECFCE;
+  display:inline-block;
+  margin: 0 auto;
+  text-align:center;
+  height:400px;
+  width:300px;
+}
+
+html{
+  font-size:10px;
+  height:100vh;
+}
+
+i {
+  padding:1rem;
 }
 
 img.clr {
   padding:0 7.5rem;
 }
+
 .insights a {
   display:inline-block;
   margin:3.6rem 0 2.4rem 0;
 }
+
 .insights p {
   text-align:left;
 }
-ul {
-  padding:1rem 0 0 0;
-  text-align:left;
+
+.jade{
+  width:50%;
+  margin:2.5rem 20rem 3.6rem 0;
+  float:left;
+  clear:right;
 }
-.user-stories li {
-  padding:0.5rem 1.6rem;
-}
-nav{
-  display:inline-block;
-  height:9rem;
-}
-.nav-links a {
-  padding:0.5rem;
-}
+
 .link-list li {
   display:inline;
   margin: 0 0.25rem;
 }
-.link-list i {
-  color:#F9F9F9;
-}
-.mermaid {
-  font-family:"Mermaid";
+
+main p {
+  padding:0.8rem;
+  margin: 0 1.6rem;
 }
 
-.overview, .ia, .brand{
+main ul{
+  font-size:1.6rem;
+  margin: 1rem 1.6rem;
+}
+
+nav{
+  display:inline-block;
+  height:9rem;
+}
+
+.nav-links{
+  clear:right;
+  float:left;
+  text-align:center;
+  padding:4rem 1rem 1.5rem 7rem;
+}
+
+.nav-links a {
+  padding:0.5rem;
+}
+
+.overview, .brand, .ia {
   margin: 2rem 0;
 }
 
 .overview ul {
   text-align: center;
+}
+
+p{
+  font-weight: 400;
+  font-size:1.6rem;
+  line-height:1.3;
+  margin:1.6rem 0;
 }
 
 .proj-hero img {
@@ -313,37 +335,21 @@ nav{
   width:100%;
 }
 
+.proj-hero img {
+  margin: 2rem 0;
+}
+
+.homepage.re-link {
+  color:#71AD96;
+}
+
+.re-link {
+  font-weight:600;
+  padding: 1rem, 1rem, 1rem, 0;
+}
 .results li {
   padding: 0.5rem 0;
   text-align:left;
-}
-
-.honeycomb{
-  background-color:	hsla(0, 0%, 98%, 1.0);
-  box-shadow:0px 4px 2px #CECFCE;
-  display:inline-block;
-  margin: 0 auto;
-  text-align:center;
-  height:400px;
-  width:300px;
-}
-
-.jade{
-  width:50%;
-  margin:2.5rem 20rem 3.6rem 0;
-  float:left;
-  clear:right;
-}
-
-.button{
-  color: hsla(0, 0%, 98%, 1.0);
-  background-color:hsla(158, 26%, 40%, 1.0);
-  box-shadow:0px 2px 2px #CECFCE;
-  font-family:"Moon-Bold";
-  font-size:1.6rem;
-  height:50px;
-  padding: 1.7rem 5rem;
-  width:265px;
 }
 
 section.honeycomb p {
@@ -360,29 +366,14 @@ section {
 section.container{
   margin: 0, 16px, 0, 16px;
 }
+
 .solution{
   margin: 0;
 }
+
 .solution p {
   text-align:left;
   padding: 0.75rem 1.6rem;
-}
-
-ul.link-list{
-  text-align:center;
-}
-
-.work-preview{
-  margin:5rem 3.75rem;
-  text-align:center;
-}
-
-
-/* images */
-.flwr{
-  height:9.443rem;
-  width:9.024rem;
-  margin:3rem;
 }
 
 .top-logo {
@@ -391,27 +382,22 @@ ul.link-list{
   width:20%;
 }
 
-/*links */
-
-a {
-  color: hsla(0, 0%, 98%, 1.0);
-  font-family:"Moon-Light";
-  font-size:1.4rem;
-  text-decoration:none;
+ul {
+  padding:1rem 0 0 0;
+  text-align:left;
 }
 
-.nav-links{
-  color:hsla(0, 0%, 98%, 1.0);
-  clear:right;
-  float:left;
+ul.link-list{
   text-align:center;
-  font-family:"Moon-Light";
-  padding:4rem 1rem 1.5rem 7rem;
 }
 
-.re-link{
-  color: hsla(158, 26%, 40%, 1.0);
-  padding: 1rem, 1rem, 1rem, 0;
+.user-stories li {
+  padding:0.5rem 1.6rem;
+}
+
+.work-preview{
+  margin:5rem 3.75rem;
+  text-align:center;
 }
 
 /* @media rules *
