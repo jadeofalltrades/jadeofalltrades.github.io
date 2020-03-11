@@ -45,6 +45,7 @@ a, .button, .by-line, .copyright, .headline, #hon .button, .link-list i, .nav-li
 h2, h4, #hon h3, #hon .re-link, #abt .re-link, .shortcut {
   color:#4B816D;
 }
+
 .honeycomb, .proj-hero, .solution, .sandwf, .hifi{
   background-color:	#F9F9F9;
   box-shadow:0px 4px 2px #CECFCE;
@@ -65,14 +66,19 @@ a:hover{
 #abt a:hover, #abt a:active{
   color:#4B816D;
 }
-
-#hon a:link, #hon a:visited{
-  color:#333734;
-}
-#hon a:hover, #hon a:active{
+#abt .re-link:link, #abt .re-link:visited, #abt .re-link:active{
   color:#4B816D;
 }
+#abt .re-link:hover{
+  color:#71AD96;
+}
 
+#hon nav a:link, #hon nav a:visited{
+  color:#333734;
+}
+#hon nav a:hover, #hon nav a:active{
+  color:#4B816D;
+}
 
 /*typography*/
 a, h1, h2, h4, .nav-links {
@@ -113,7 +119,7 @@ a {
 }
 
 #abt h1{
-  font-size:2rem;
+  font-size:2.8rem;
   margin:2.5rem 0;
 }
 
