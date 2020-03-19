@@ -198,6 +198,9 @@ a {
 .discovery > .per{
   width:45%;
 }
+p.dm-sans{
+  padding-bottom:2rem;
+}
 
 .e-link {
   font-size:1.8rem;
@@ -250,7 +253,7 @@ h4{
   font-size:2.4rem;
   line-height: 2.8rem;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
 }
 
 #hon{
@@ -258,7 +261,7 @@ h4{
 }
 
 #hon .button {
-  padding:1.6rem 2rem;
+  padding:1.6rem 0;
 }
 
 #hon h1{
@@ -290,8 +293,8 @@ h4{
   display:inline-block;
   margin: 0 auto;
   text-align:center;
-  height:400px;
-  width:300px;
+  height:45rem;
+  width:30rem;
 }
 
 html{
@@ -343,7 +346,9 @@ nav{
   display:inline-block;
   height:9rem;
   width:100%;
+  align-items:center;
 }
+
 .hero .re-link {
   color:#71AD96;
 }
@@ -351,7 +356,7 @@ nav{
   clear:right;
   float:right;
   text-align:center;
-  padding:4rem 1rem 1.5rem 6rem;
+  padding:3rem 1rem 3rem 4rem;
 }
 
 .nav-links a {
@@ -408,18 +413,14 @@ p{
 }
 
 section.honeycomb p {
-  font-size:1.4rem;
-  line-height:140%;
+  font-size:1.6rem;
+  line-height:150%;
   margin:0 1.6rem 4rem 1.6rem;
   padding: 1.6rem;
 }
 
 section {
   margin:0 1.6rem;
-}
-
-section.container{
-  margin: 0 16px;
 }
 
 .solution{
@@ -432,11 +433,19 @@ section.container{
   padding: 0.75rem 1.6rem;
   margin-bottom: 2rem;
 }
+.sub-head{
+  color:#F9F9F9;
+  padding-bottom: 3rem;
+  font-size:2rem;
+}
 
+.lg-logo{
+  display:none;
+}
 .top-logo {
   float:left;
-  margin: 1.6rem 1.6rem 0 1.6rem;
-  width:20%;
+  margin: 1.6rem;
+  width:15%;
 }
 
 ul {
@@ -455,24 +464,183 @@ ul.link-list{
   margin:5rem 3.75rem;
   text-align:center;
 }
-
-/* @media rules *
-@media screens and (min-width 480px){
-  .container{
-    width:40rem;
+/*@media rules */
+@media screen and (min-width: 476px){
+  #abt h1{
+    margin-right:40rem;
   }
-  .headline {
-    font-size:2.4rem;
+  #abt .hero{
+    margin-left:5rem;
+  }
+  .about-text{
+    width:75%;
+    margin-left:5rem;
+  }
+  html{
+    font-size:12px;
+  }
+  .by-line{
+    padding:0 20rem 2rem 0;
+  }
+
+  .headline{
+    padding:3rem 24rem 3rem 0;
+}
+  .hero {
+    background-image:url("../images/SVG/hero-bg.svg");
+    position:inherit;
+    z-index:
+  }
+  .honeycomb {
+    height:40rem;
+    width:50rem;
+  }
+  .jade {
+    width:30%;
+    margin:2.5rem 40rem 3.6rem 0;
+  }
+  #hon p, #hon li {
+    line-height:150%;
+  }
+  section.honeycomb p {
+    padding:1.6rem 1rem;
+  }
+  .work-preview{
+    margin:8rem 3.75rem;
+  }
+
+  .proj-hero p {
+    margin:2rem 0;
   }
 }
-@media screens and (min-width:800px) {
-  .container{
-    width:70rem;
-  }
-  body {
+
+@media screen and (min-width:769px) {
+.about-text{
+  margin-left:3rem;
+}
+  #abt {
     display:grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows:auto;
-    grid-gap:3.2rem;
+  }
+  .hero{
+    padding:12rem 0;
+    background-image:url("../images/SVG/hero-bg.svg");
+
+  }
+  #hon p {
+    padding: 0 8rem 2.4rem 8rem;
+  }
+  #hon .button{
+    margin:0 20rem;
+    padding: 1.6rem 3rem;
+    width: 350px;
+  }
+  .results li, .user-stories li{
+    padding:0 8rem;
+  }
+  .nav-links a{
+    font-size:1.15rem;
+    margin-right:2rem;
+  }
+  .headline, .sub-head, .by-line, .hero .re-link {
+    margin-left:3rem;
+  }
+  .headline{
+    font-size:4rem;
+    padding-bottom:1rem;
+    line-height:120%;
+  }
+  nav {
+    height:12rem;
+  }
+  .nav-links {
+    padding-top:5rem;
+  }
+
+  .sub-head{
+    color:#F9F9F9;
+    padding-bottom: 3rem;
+    font-size:3rem;
+  }
+  .by-line{
+    font-size:2.3rem;
+    line-height: 135%;
+    padding-right:29rem;
+  }
+  .work-preview{
+    margin:10rem 3.75rem;
+  }
+  .top-logo{
+    width:10%;
+    padding:1rem;
+    margin-left:16px
+
+  }
+  .discovery > .per {
+    width:30%;
+  }
+  .discovery > .icon {
+    width:30%;
+  }
+  img.clr {
+    padding:0 12.5rem;
+  }
+  .proj-hero img, .overview img, .discovery img, .ia img, .brand img, .insights img {
+    width:80%;
+  }
+  #abt h1 {
+    margin-left:3rem;
+  }
+  .about-text {
+    width:55%;
+    float:left;
+  }
+  .abt-hero{
+    width:30%;
+    float:right;
+    text-align:center;
+    vertical-align:middle;
+    margin-top:3rem;
+  }
+  .jade {
+    width:75%;
+  }
+
+  /*.lg-logo {
+    display:inline-block;
+    margin:3rem 1.3rem;
+    width:50%;
+    float:left;
+  }*/
+
+}
+/*#hon .container{
+  display:grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows:auto;
+  grid-gap: 0.75rem;
+
+  .honeycomb{
+    width:70.75rem;
+    height:40rem;
+    display:grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows:18% 60% 18%;
+    grid-gap:0.75rem;
+    align-items: center;
+  }
+  .flwr{
+    grid-column: 1 / 2;
+    grid-row:2 / 3;
+
+  }
+  .desc{
+    grid-column-start:2;
+    grid-row-start: 1;
+    grid-row-end:3;
+  }
+  #home .button{
+    grid-column-start:2;
+    grid-row-start: 3;
+
   }
 }*/
