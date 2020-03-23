@@ -159,7 +159,7 @@ a {
 .button{
   background-color:#4B816D;
   box-shadow:0px 2px 2px #CECFCE;
-  font-size:1.6rem;
+  font-size:1.4rem;
   height:50px;
   padding: 1.7rem 5rem;
   width:265px;
@@ -228,7 +228,7 @@ figure img {
 footer {
     text-align:center;
     background-color: #333734;
-    padding:0 2rem;
+    padding:2rem;
     width:100%;
 }
 
@@ -261,7 +261,7 @@ h4{
 }
 
 #hon .button {
-  padding:1.6rem 0;
+  padding:1.6rem;
 }
 
 #hon h1{
@@ -295,6 +295,7 @@ h4{
   text-align:center;
   height:45rem;
   width:30rem;
+  max-width:99%;
 }
 
 html{
@@ -379,6 +380,7 @@ p{
 }
 .per {
   margin:1.8rem;
+  padding:3.6rem;
 }
 .proj-hero img {
   padding:2rem 3.2rem 0 3.2rem;
@@ -433,19 +435,24 @@ section {
   padding: 0.75rem 1.6rem;
   margin-bottom: 2rem;
 }
+.sm-list {
+  color:#333734;
+  display:inline-flex;
+}
 .sub-head{
   color:#F9F9F9;
   padding-bottom: 3rem;
   font-size:2rem;
 }
 
-.lg-logo{
+.lg-logo, .lg-hon {
   display:none;
 }
 .top-logo {
   float:left;
   margin: 1.6rem;
   width:15%;
+  max-width:100px;
 }
 
 ul {
@@ -471,6 +478,10 @@ ul.link-list{
   }
   #abt .hero{
     margin-left:5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align:center;
   }
   .about-text{
     width:75%;
@@ -502,6 +513,10 @@ ul.link-list{
   #hon p, #hon li {
     line-height:150%;
   }
+.lg-hon{
+  display:none;
+}
+
   section.honeycomb p {
     padding:1.6rem 1rem;
   }
@@ -514,29 +529,116 @@ ul.link-list{
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:769px){
+/*about page */
+
 .about-text{
-  margin-left:3rem;
+  margin-left:12rem;
 }
   #abt {
     display:grid;
   }
+  #abt h1 {
+    margin-left:12rem;
+  }
+  .about-text {
+    max-width:42%;
+    float:left;
+  }
+  .abt-hero{
+    display:flex;
+    width:30%;
+    float:right;
+    flex-direction:column;
+    text-align:center;
+    align-items: center;
+    margin-top:3rem;
+    margin-right:10rem;
+  }
+
+  .abt-hero p {
+    max-width: 80%;
+  }
+.about{
+  margin-top:11rem;
+}
+
+  #abt .re-link{
+    padding:0;
+    text-align:left;
+    width:auto;
+  }
+  .jade {
+    width:75%;
+    margin:auto;
+  }
+/*homepage*/
+
+  .by-line{
+    font-size:2.3rem;
+    line-height: 135%;
+    padding-right:29rem;
+  }
+  .discovery > .per {
+    width:30%;
+  }
+  .discovery > .icon {
+    width:30%;
+  }
+
   .hero{
     padding:12rem 0;
     background-image:url("../images/SVG/hero-bg.svg");
-
   }
-  #hon p {
-    padding: 0 8rem 2.4rem 8rem;
+  #hon main p{
+    max-width: 55%;
+    text-align:center;
+    margin:auto;
   }
   #hon .button{
     margin:0 20rem;
     padding: 1.6rem 3rem;
     width: 350px;
   }
-  .results li, .user-stories li{
-    padding:0 8rem;
+  .honeycomb {
+    width:95%;
+    height:30rem;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
   }
+  section.honeycomb p{
+    padding:1.6rem 0;
+    margin:0 1.6rem 3rem 0;
+  }
+  .flwr{
+    display: none;
+  }
+  .lg-hon {
+    width:40%;
+    display:inline-block;
+    vertical-align:middle;
+    margin:auto;
+  }
+  .desc {
+    width:49%;
+    display:inline-block;
+    text-align:left;
+    vertical-align: middle;
+  }
+  .work-preview{
+    display:inline-block;
+  }
+  img.clr {
+    padding:0 12.5rem;
+  }
+
+  .insights a {
+    display:inline-block;
+    margin:5rem 40rem;
+  }
+
   .nav-links a{
     font-size:1.15rem;
     margin-right:2rem;
@@ -549,61 +651,71 @@ ul.link-list{
     padding-bottom:1rem;
     line-height:120%;
   }
+
+  .marissa, .colby{
+    width:45%;
+    margin-bottom:7.5rem;
+  }
+  .marissa{
+    float:left;
+  }
+  .colby{
+    float:right;
+  }
   nav {
     height:12rem;
   }
   .nav-links {
     padding-top:5rem;
   }
-
+  .results li, .user-stories li{
+    padding:0 8rem;
+  }
   .sub-head{
     color:#F9F9F9;
     padding-bottom: 3rem;
     font-size:3rem;
   }
-  .by-line{
-    font-size:2.3rem;
-    line-height: 135%;
-    padding-right:29rem;
-  }
-  .work-preview{
-    margin:10rem 3.75rem;
-  }
   .top-logo{
     width:10%;
     padding:1rem;
-    margin-left:16px
+    margin-left:16px;
 
   }
-  .discovery > .per {
-    width:30%;
-  }
-  .discovery > .icon {
-    width:30%;
-  }
-  img.clr {
-    padding:0 12.5rem;
+  .personas {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
   }
   .proj-hero img, .overview img, .discovery img, .ia img, .brand img, .insights img {
-    width:80%;
+    max-width:50%;
   }
-  #abt h1 {
-    margin-left:3rem;
+
+  .work-preview{
+    margin:10rem 3.75rem;
   }
-  .about-text {
-    width:55%;
-    float:left;
+/* footer styles*/
+  footer {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
   }
-  .abt-hero{
-    width:30%;
-    float:right;
-    text-align:center;
-    vertical-align:middle;
-    margin-top:3rem;
+  .copyright{
+    display:inline-block;
+    line-height:1rem;
+    margin:0;
+    order:1;
+    padding-top:1.5rem;
+    text-align:left;
   }
-  .jade {
-    width:75%;
+  ul.link-list{
+    display:inline-block;
+    order:2;
+    text-align:right;
   }
+
 
   /*.lg-logo {
     display:inline-block;
