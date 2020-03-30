@@ -16,19 +16,25 @@ jade #6aa991*/
     font-style: normal;
 
 }
+
 @font-face {
-  src: url(/Users/jadeabbott-brenner/program/portfolio-pages/fonts/Moon-Light.ttf) format("truetype"),
-  url(fonts/moon_light.woff) format('woff');
-  font-family: "Moon-Light";
+  src: /*url('/Users/jadeabbott-brenner/program/portfolio-pages/fonts/Moon-Light.ttf') format('truetype'),*/
+  url('../fonts/moon_light.woff') format('woff'),
+  url('../fonts/Moon/Moon-Light.otf') format('opentype');
+  font-family: 'Moon-Light';
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  src: url(/Users/jadeabbott-brenner/program/portfolio-pages/fonts/Moon-Bold.ttf);
+  src: url('/Users/jadeabbott-brenner/program/portfolio-pages/fonts/Moon-Bold.ttf') format('truetype'),
+  url('../fonts/Moon/Moon-Bold.otf') format('opentype');
   font-family: "Moon-Bold";
 }
 
+
 @font-face{
-  src:url(fonts/Mermaid.ttf);
+  src:url('../fonts/Mermaid.ttf');
   font-family:"Mermaid";
 }
 /* colors */
@@ -82,7 +88,7 @@ a:hover{
 
 /*typography*/
 a, h1, h2, h4, .nav-links {
-  font-family:"Moon-Light", "Moon";
+  font-family:"Moon-Light", "Moon", "moonlight", sans-serif;
 }
 
 #abt h2, .by-line, .e-link, h3, li, p, .re-link {
@@ -90,7 +96,7 @@ a, h1, h2, h4, .nav-links {
 }
 
 .button, .copyright, #hon h3 {
-  font-family: "Moon-Bold", "Moon";
+  font-family: "Moon-Bold", "moonlight";
   font-weight:600;
 }
 
@@ -104,7 +110,9 @@ a, h1, h2, h4, .nav-links {
 li, p {
   line-height: 145%;
 }
-
+hr {
+  display:none;
+}
 /*margins and padding */
 
 a {
@@ -156,11 +164,21 @@ a {
 .sandwf img{
   padding:2rem 1.6rem;
 }
+.badges{
+max-width:50%;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+vertical-align:middle;
+}
+.badges img {
+  margin:1rem 2rem;
+}
 .button{
   background-color:#4B816D;
   box-shadow:0px 2px 2px #CECFCE;
   font-size:1.4rem;
-  height:50px;
   padding: 1.7rem 5rem;
   width:265px;
 }
@@ -186,6 +204,9 @@ a {
   padding-bottom: 1.5rem;
   text-align:center;
   width:75%;
+}
+.solution img {
+  margin: 2rem 0;
 }
 .discovery > .icon{
   margin-bottom:3rem;
@@ -278,7 +299,8 @@ h4{
   font-size: 2rem;
 }
 #hon h4 {
-  margin:2.4rem 0 2rem 0;
+  margin-top:2.4rem;
+  margin-bottom:2rem;
   font-size:1.8rem;
 }
 
@@ -333,12 +355,12 @@ img.clr {
   margin: 0 0.25rem;
 }
 
-main p {
+.proj-main-wrapper p {
   padding:0.8rem;
   margin: 0 1.6rem;
 }
 
-main ul{
+.proj-main-wrapper ul{
   font-size:1.6rem;
   margin:0 1.6rem;
 }
@@ -347,6 +369,8 @@ nav{
   display:inline-block;
   height:9rem;
   width:100%;
+  padding:0 1.6rem;
+  margin-bottom:1.6rem;
   align-items:center;
 }
 
@@ -373,14 +397,13 @@ nav{
 }
 
 p{
-  font-weight: 400;
+  font-weight: 300;
   font-size:1.6rem;
   line-height:1.45;
   margin:1.6rem 0;
 }
 .per {
-  margin:1.8rem;
-  padding:3.6rem;
+  padding:5.2rem;
 }
 .proj-hero img {
   padding:2rem 3.2rem 0 3.2rem;
@@ -388,16 +411,17 @@ p{
 
 .proj-hero p {
   padding:0 2.4rem 2.4rem 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
-.proj-hero img, .overview img, .discovery img, .ia img, .brand img, .insights img {
-  width:90%;
+.proj-hero img, .changes img, .overview img, .ia img, .brand img, .hifi img, .insights img {
+  width:80%;
 }
 
 .proj-hero, .solution, .sandwf, .hifi {
   background-size:cover;
-  margin: 0 0 3rem 0;
-  padding:3rem 0 3rem 0;
+  margin-bottom:5rem;
+  padding:3rem 0;
   width:100%;
 }
 
@@ -421,12 +445,8 @@ section.honeycomb p {
   padding: 1.6rem;
 }
 
-section {
-  margin:0 1.6rem;
-}
-
 .solution{
-  margin: 3rem 0;
+  margin: 6rem 0;
   padding:3rem 0;
 }
 
@@ -450,9 +470,9 @@ section {
 }
 .top-logo {
   float:left;
-  margin: 1.6rem;
+  margin-top:1.6rem;
   width:15%;
-  max-width:100px;
+  max-width:80px;
 }
 
 ul {
@@ -466,6 +486,12 @@ ul.link-list{
 .user-stories li {
   padding:0.5rem 1.6rem;
 }
+.user-testing {
+  text-align:left;
+}
+.user-testing h4 {
+  margin-left:2.4rem;
+}
 
 .work-preview{
   margin:5rem 3.75rem;
@@ -473,6 +499,7 @@ ul.link-list{
 }
 /*@media rules */
 @media screen and (min-width: 476px){
+
   #abt h1{
     margin-right:40rem;
   }
@@ -487,20 +514,32 @@ ul.link-list{
     width:75%;
     margin-left:5rem;
   }
-  html{
-    font-size:12px;
+  hr {
+     display:block;
+     color:#E5E5E5;
+     border-top: 1px #E5E5E5 solid;
+     width:75%;
+     text-align: center;
+     margin:10rem auto;
+  }
+  .insights a {
+    display:block;
+    margin:2.4rem auto;
+
   }
   .by-line{
     padding:0 20rem 2rem 0;
   }
-
+  figcaption{
+    width:50%;
+    margin:auto;
+  }
   .headline{
     padding:3rem 24rem 3rem 0;
 }
   .hero {
     background-image:url("../images/SVG/hero-bg.svg");
     position:inherit;
-    z-index:
   }
   .honeycomb {
     height:40rem;
@@ -512,6 +551,13 @@ ul.link-list{
   }
   #hon p, #hon li {
     line-height:150%;
+    width:75%;
+    margin:2.4rem auto;
+  }
+  #hon li {
+    line-height:150%;
+    width:75%;
+    margin:auto;
   }
 .lg-hon{
   display:none;
@@ -520,16 +566,49 @@ ul.link-list{
   section.honeycomb p {
     padding:1.6rem 1rem;
   }
+  .user-testing h4 {
+    margin-left:10.4rem;
+  }
   .work-preview{
     margin:8rem 3.75rem;
   }
 
-  .proj-hero p {
-    margin:2rem 0;
-  }
 }
 
 @media screen and (min-width:769px){
+  /* navigation */
+    nav {
+      height:12rem;
+    }
+    .nav-links {
+      padding-top:5rem;
+    }
+    .top-logo{
+      width:10%;
+      padding:1rem;
+      margin-left:16px;
+    }
+    /* footer styles*/
+      footer {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:center;
+      }
+      .copyright{
+        display:inline-block;
+        line-height:1rem;
+        margin:0;
+        order:1;
+        padding-top:1.5rem;
+        text-align:left;
+      }
+      ul.link-list{
+        display:inline-block;
+        order:2;
+        text-align:right;
+      }
+
 /*about page */
 
 .about-text{
@@ -552,16 +631,15 @@ ul.link-list{
     flex-direction:column;
     text-align:center;
     align-items: center;
-    margin-top:3rem;
     margin-right:10rem;
   }
 
   .abt-hero p {
     max-width: 80%;
   }
-.about{
-  margin-top:11rem;
-}
+  .about{
+    margin-top:11rem;
+  }
 
   #abt .re-link{
     padding:0;
@@ -579,24 +657,37 @@ ul.link-list{
     line-height: 135%;
     padding-right:29rem;
   }
-  .discovery > .per {
-    width:30%;
-  }
-  .discovery > .icon {
-    width:30%;
-  }
 
   .hero{
     padding:12rem 0;
     background-image:url("../images/SVG/hero-bg.svg");
   }
-  #hon main p{
-    max-width: 55%;
-    text-align:center;
-    margin:auto;
+  .work-preview{
+    display:inline-block;
   }
+  .work-preview{
+    margin:10rem 3.75rem;
+  }
+  /* project */
+  .discovery > .per {
+    width:30%;
+  }
+
+  .badges img {
+    width:25%;
+  }
+  .badges >.pin{
+    width:10%;
+  }
+
+  #hon li {
+    max-width:70%;
+    margin:auto;
+
+  }
+
   #hon .button{
-    margin:0 20rem;
+    margin:auto;
     padding: 1.6rem 3rem;
     width: 350px;
   }
@@ -627,13 +718,10 @@ ul.link-list{
     text-align:left;
     vertical-align: middle;
   }
-  .work-preview{
-    display:inline-block;
+  .clr-pal p{
+    text-align:left;
+    margin:0;
   }
-  img.clr {
-    padding:0 12.5rem;
-  }
-
   .insights a {
     display:inline-block;
     margin:5rem 40rem;
@@ -656,18 +744,8 @@ ul.link-list{
     width:45%;
     margin-bottom:7.5rem;
   }
-  .marissa{
-    float:left;
-  }
-  .colby{
-    float:right;
-  }
-  nav {
-    height:12rem;
-  }
-  .nav-links {
-    padding-top:5rem;
-  }
+
+
   .results li, .user-stories li{
     padding:0 8rem;
   }
@@ -676,83 +754,103 @@ ul.link-list{
     padding-bottom: 3rem;
     font-size:3rem;
   }
-  .top-logo{
-    width:10%;
-    padding:1rem;
-    margin-left:16px;
 
+
+  .hero-desc {
+    display:inline-block;
+    text-align:center;
+    width:50%;
   }
-  .personas {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items:center;
+
+  .hero-desc {
+    margin-bottom:4rem;
   }
-  .proj-hero img, .overview img, .discovery img, .ia img, .brand img, .insights img {
+
+
+  .proj-hero img {
     max-width:50%;
   }
-
-  .work-preview{
-    margin:10rem 3.75rem;
+  .hero-desc > img {
+    padding:0rem;
   }
-/* footer styles*/
-  footer {
+  .proj-hero p{
+    padding-bottom:4.2rem;
+  }
+  .sol-desc {
+    display:flex;
+    text-align:center;
+  }
+  .sol-desc >img {
+    padding:5rem;
+  }
+  .solution {
+    flex-wrap:wrap;
+  }
+  .solution p {
+    padding: 0 1.6rem;
+  }
+  .solution h4 {
+    margin-left:8rem;
+  }
+  .desc-txt{
+    text-align:left;
+    max-width:50%;
+  }
+  .discovery p, .ia p, .brand p, .insights p, .prob {
+    max-width:75%;
+    margin:auto;
+  }
+  .insightful-txt{
+    margin-bottom: 5rem;
+  }
+  .personas, .proj-hero, .solution,  .userflow, .badges {
     display:flex;
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
   }
-  .copyright{
-    display:inline-block;
-    line-height:1rem;
-    margin:0;
-    order:1;
-    padding-top:1.5rem;
-    text-align:left;
-  }
-  ul.link-list{
-    display:inline-block;
-    order:2;
-    text-align:right;
+  .brand-elements, .changes {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin: 4rem 0;
   }
 
-
-  /*.lg-logo {
-    display:inline-block;
-    margin:3rem 1.3rem;
-    width:50%;
-    float:left;
-  }*/
-
-}
-/*#hon .container{
-  display:grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows:auto;
-  grid-gap: 0.75rem;
-
-  .honeycomb{
-    width:70.75rem;
-    height:40rem;
-    display:grid;
-    grid-template-columns: 49% 49%;
-    grid-template-rows:18% 60% 18%;
-    grid-gap:0.75rem;
+  .clr-pal-inner, .typefaces{
+    display:flex;
+    flex-direction:column;
     align-items: center;
+    justify-content: space-around;
+    width:50%;
   }
-  .flwr{
-    grid-column: 1 / 2;
-    grid-row:2 / 3;
-
+  .typefaces{
+    align-items:center;
   }
-  .desc{
-    grid-column-start:2;
-    grid-row-start: 1;
-    grid-row-end:3;
+  .clr-pal-inner {
+    align-items:flex-start;
+    margin-left:7.2rem;
   }
-  #home .button{
-    grid-column-start:2;
-    grid-row-start: 3;
-
+  .clr-pal img {
+    padding:0;
   }
-}*/
+  .typefaces p {
+    width:50%;
+  }
+ .overview img, .discovery img, .ia img, .brand img, .insights img {
+    max-width:50%;
+  }
+.proj-hero, .solution, .sandwf, .hifi {
+  padding: 10rem 0;
+}
+.user-testing h4 {
+  margin-left:13.6rem;
+}
+.userflow p {
+  max-width:45%;
+  text-align: left;
+}
+.userflow {
+  margin-left:8rem;
+}
+}

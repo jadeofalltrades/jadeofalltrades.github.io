@@ -10,7 +10,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
   <!-- custom styles -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
@@ -27,12 +27,14 @@
         <a href="about.html">About</a>
       </section>
     </nav>
-    <main>
+    <section class="proj-main-wrapper">
     <!-- hero -->
     <section class ="proj-hero">
-      <img src="images/honeycomb-images/honeycomb-logo-full.png" alt="honeycomb logo" srcset="images/honeycomb-images/hc-svg/honeycomb-logo-full.svg">
-      <p>Honeycomb is an organization focused cloud storage solution. With Honeycomb, users can save their files in the way that makes sense to them, whether they are saving documents, notes, photos, or websites.</p>
-      <a href="https://invis.io/T8UUJLSP9YE" class="button">View Invsion Prototype</a>
+      <div class="hero-desc">
+        <img src="images/honeycomb-images/honeycomb-logo-full.png" alt="honeycomb logo" srcset="images/honeycomb-images/hc-svg/honeycomb-logo-full.svg">
+        <p>Honeycomb is an organization focused cloud storage solution. With Honeycomb, users can save their files in the way that makes sense to them, whether they are saving documents, notes, photos, or websites.</p>
+        <a href="https://invis.io/T8UUJLSP9YE" class="button hero-invis">View Invsion Prototype</a>
+      </div>
       <img src="images/honeycomb-images/computer-honeycomb.jpg" alt="homepage on laptop screen"/>
     </section>
     <!-- overview -->
@@ -53,14 +55,18 @@
         <li>Pen & Paper</li>
       </ul>
       <h3>Problem</h3>
-        <p>Honeycomb is meant to address the problem of cloud storage services that are too hard to organize, aesthetically unappealing, and constantly asking users to sign up for premium memberships just to get more storage space. </p>
+        <p class="prob">Honeycomb is meant to address the problem of cloud storage services that are too hard to organize, aesthetically unappealing, and constantly asking users to sign up for premium memberships just to get more storage space. </p>
       <section class="solution">
         <h3>Solution</h3>
-        <h4>Honeycomb</h4>
-          <p>This is Honeycomb. It has similarities to other cloud storage solutions, in that user can create whatever documents they want, or upload their own files. It is different in that the onus of organization is not put on the user–a frequent pain point among users surveyed.</p>
-          <p>It also gives users a lot of options for storage. Even though the majority of users use cloud storage for making documents, spreadsheets, and presentations, there are many who take notes, store photos, and create boards as well.</p>
-          <p>Many users use multiple apps to achieve this. With Honeycomb, users can create different save destinations for all their different media, and organization happens first, so nothing gets lost.</p>
+        <div class="sol-desc">
+          <div class="desc-txt">
+            <h4>Honeycomb</h4>
+              <p>This is Honeycomb. It has similarities to other cloud storage solutions, in that user can create whatever documents they want, or upload their own files. It is different in that the onus of organization is not put on the user–a frequent pain point among users surveyed.</p>
+              <p>It also gives users a lot of options for storage. Even though the majority of users use cloud storage for making documents, spreadsheets, and presentations, there are many who take notes, store photos, and create boards as well.</p>
+              <p>Many users use multiple apps to achieve this. With Honeycomb, users can create different save destinations for all their different media, and organization happens first, so nothing gets lost.</p>
+          </div>
           <img src="images/honeycomb-images/desktop-dashboard.jpg" alt="honeycomb dashboard" srcset="images/honeycomb-images/hc-svg/desktop-dashboard.svg"/>
+        </div>
       </section>
     </section>
     <!-- research & discovery -->
@@ -93,14 +99,17 @@
       <h3>Competitive Analysis</h3>
         <p>I also took a look at popular apps on the market to see what they were getting right, and maybe a few things that they could do better.</p>
         <a href="images/PDF/swot-charts.pdf" class="re-link">View SWOT charts ></a>
-        <img src="images/honeycomb-images/pinterest.png" alt="Pinterest badge" srcset="images/honeycomb-images/hc-svg/pinterest.svg" class="pin"/>
-        <img src="images/honeycomb-images/gdrive.png" alt="Google Drive badge" srcset="images/honeycomb-images/hc-svg/gdrive.svg" class="icon"/>
-        <img src="images/honeycomb-images/evernote.png" alt="Evernote badge" srcset="images/honeycomb-images/hc-svg/evernote.svg" class="icon"/>
+        <div class="badges">
+          <img src="images/honeycomb-images/pinterest.png" alt="Pinterest badge" srcset="images/honeycomb-images/hc-svg/pinterest.svg" class="pin"/>
+          <img src="images/honeycomb-images/gdrive.png" alt="Google Drive badge" srcset="images/honeycomb-images/hc-svg/gdrive.svg" class="icon"/>
+          <img src="images/honeycomb-images/evernote.png" alt="Evernote badge" srcset="images/honeycomb-images/hc-svg/evernote.svg" class="icon"/>
+        </div>
       <h3>Key Takeaways</h3>
         <p>Pinterest, while not a typical “cloud storage solution” does save user’s information in the cloud, and is a popular method of saving and sharing content on the Internet. While users are limited in the content they can create with Pinterest, saved content is organized in a snap.</p>
         <p>The strongest competitor I researched, Google Drive offers users the most in content creation and storage space, and while organization is easy to accomplish, users need to actively engage in organizing their files.</p>
         <p>Evernote follows a freemium model, and while the notetaking and content saving app does offer key functionality, the normal non-paying regular user would not find the free membership to be useful in the long term.</p>
     </section>
+    <hr>
     <!-- information architecture -->
     <section class="ia">
       <h2>Information Architechture</h2>
@@ -119,47 +128,62 @@
             <li>As a user I want to see my notifications so that I know when my team is communicating with me.</li>
           </ul>
           <h3>User Flows</h3>
+            <div class="userflow">
             <p>After determining what user stories would make up my MVP I set out to map the user flows, first on paper, and then in Figma. During this process I decided that the simplest way to satisfy user goals would be to incorporate modal screens into my design.</p>
               <figure>
                 <img src="images/honeycomb-images/userflow.jpg" alt="example of user flow"/>
                 <figcaption>In this flow, users are saving photos to the app from their phone. </figcaption>
               </figure>
+            </div>
           <section class="sandwf">
             <h3>Sketches & Wireframes</h3>
               <p>I started sketching my ideas out onto paper for rapid iteration.  When I was happy with them, I moved into Figma to draw up quick wireframes for prototyping. </p>
               <img src="images/honeycomb-images/hc-sketches.jpg" alt="initial sketches"/>
               <img src="images/honeycomb-images/dashboardwf.png" alt="wireframe showing dashboard" srcset="images/honeycomb-images/hc-svg/dashboardwf.svg"/>
-              <img src="images/honeycomb-images/homepage-wf.png" alt="wireframe showing homepage" srcset="images/honeycomb-images/hc-svg/homepage-wf.svg"/>
+              <img src="images/honeycomb-images/Group-202.png" alt="wireframe showing homepage" srcset="images/honeycomb-images/Group-202.svg"/>
           </section>
           <h3>User Testing</h3>
-          <h4>What I tested</h4>
-          <p>Users were asked to make an account, create a piece of content, and then organize that piece of content.</p>
-          <h4>What I learned</h4>
-          <p>Users had difficulty differentiating between the login and signup flow. Some icons were difficult for users to understand without labels. </p>
-          <h4>Changes I made to my design</h4>
-          <p>In later iterations I completely separated the login and signup flows on the homepage and reorganized the page hierarchy to prioritize the signup. I also made sure every icon was assigned a label.</p>
+          <div class="user-testing">
+            <h4>What I tested</h4>
+            <p>Users were asked to make an account, create a piece of content, and then organize that piece of content.</p>
+            <h4>What I learned</h4>
+            <p>Users had difficulty differentiating between the login and signup flow. Some icons were difficult for users to understand without labels. </p>
+            <h4>Changes I made to my design</h4>
+            <p>In later iterations I completely separated the login and signup flows on the homepage and reorganized the page hierarchy to prioritize the signup. I also made sure every icon was assigned a label.</p>
+          </div>
     </section>
+    <hr>
     <!-- brand development -->
-    <section class="brand">
+    <section>
       <h2>Brand Development</h2>
         <p>For branding, I took a look at both my target market (females 25-34) and my competitors to see what would appeal to users. After thinking a lot about possible names, I settled on Honeycomb. I wanted to avoid overused storage tropes such as clouds and boxes, in hopes it would make my product stand out more.</p>
         <p>After exploring my logo options through sketches and digital renderings, I picked a simple logo and type treatment for a straightforward and contemporary mark.</p>
-        <img src="images/honeycomb-images/hc-logo-sketch1.jpg" alt="image of logo sketches"/>
-        <img src="images/honeycomb-images/hc-logo-sketch2.JPG" alt="image of logo sketches"/>
-        <img src="images/honeycomb-images/honeycomb-logo-full.png" alt="finished version of logo" srcset="images/honeycomb-images/hc-svg/honeycomb-logo-full.svg"/>
-        <h3>Color Palette</h3>
-          <h4>Primary Colors</h4>
-            <img src="images/honeycomb-images/primary-colors.png" alt="colors goldenrod and lavender" srcset="images/honeycomb-images/hc-svg/primary.svg" class="clr"/>
-          <h4>Secondary Colors</h4>
-            <img src="images/honeycomb-images/secondary-colors.png" alt="colors poppy, sage, and sky" srcset="images/honeycomb-images/hc-svg/secondary.svg"/>
-          <h4>Neutrals</h4>
-            <img src="images/honeycomb-images/neutrals.png" alt="colors neutral grey and off-black" srcset="images/honeycomb-images/hc-svg/neutral.svg" class="clr"/>
-          <p>Honeycomb’s color palette was inspired by a field of wildflowers. The primary color palette of lavender and goldenrod were meant to convey happiness, optimism and calm.</p>
-        <h3>Typography</h3>
-          <h4 class="mermaid">Mermaid</h4>
-            <p class="mermaid">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890</p>
-          <h4 class="dm-sans">DM Sans Regular</h4>
-            <p class="dm-sans">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890</p>
+        <div class="brand">
+          <img src="images/honeycomb-images/hc-logo-sketch1.jpg" alt="image of logo sketches"/>
+          <img src="images/honeycomb-images/hc-logo-sketch2.JPG" alt="image of logo sketches"/>
+          <img src="images/honeycomb-images/honeycomb-logo-full.png" alt="finished version of logo" srcset="images/honeycomb-images/hc-svg/honeycomb-logo-full.svg"/>
+        </div>
+        <div class="brand-elements">
+          <div class="clr-pal">
+            <h3>Color Palette</h3>
+            <div class="clr-pal-inner">
+              <h4>Primary Colors</h4>
+                <img src="images/honeycomb-images/primary-colors.png" alt="colors goldenrod and lavender" srcset="images/honeycomb-images/hc-svg/primary.svg" class="clr"/>
+              <h4>Secondary Colors</h4>
+                <img src="images/honeycomb-images/secondary-colors.png" alt="colors poppy, sage, and sky" srcset="images/honeycomb-images/hc-svg/secondary.svg"/>
+              <h4>Neutrals</h4>
+                <img src="images/honeycomb-images/neutrals.png" alt="colors neutral grey and off-black" srcset="images/honeycomb-images/hc-svg/neutral.svg" class="clr"/>
+                <p>Honeycomb’s color palette was inspired by a field of wildflowers. The primary color palette of lavender and goldenrod were meant to convey happiness, optimism and calm.</p>
+            </div>
+          </div>
+          <div class="typefaces">
+            <h3>Typography</h3>
+              <h4 class="mermaid">Mermaid</h4>
+                <p class="mermaid">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890</p>
+              <h4 class="dm-sans">DM Sans Regular</h4>
+                <p class="dm-sans">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 1234567890</p>
+          </div>
+        </div>
         <section class="hifi">
           <h3>High Fidelity Mockups</h3>
               <img src="images/honeycomb-images/desktop-dashboard.jpg" alt="image of dashboard" srcset="images/honeycomb-images/hc-svg/desktop-dashboard.svg"/>
@@ -167,39 +191,52 @@
               <img src="images/honeycomb-images/hc-newsave.png" alt="image of new save screen" srcset="images/honeycomb-images/hc-svg/hc-newsave.svg"/>
         </section>
         <h3>Second Round User Testing</h3>
-        <h4>What I tested</h4>
-        <p>For the second round of testing I asked users to log in, upgrade their accounds to premium, and create a folder.</p>
-        <h4>What I learned</h4>
-        <p>All assigned tasks were completed correctly by users.  Some small tweaks were called for in order to make some elements even more obcious and clear.</p>
-        <h4>Changes I made to my design</h4>
-        <p>For the final mockups, I changed a few things, including changing the fill color of the New icon to make it stand out even more, adding a scroll indicator to the homepage, and  changed the CTA links on the homepage into buttons.</p>
-            <figure>
-              <img src="images/honeycomb-images/new-old.png" alt="image of grey New icon" srcset="images/honeycomb-images/hc-svg/new-old.svg"/>
-              <img src="images/honeycomb-images/new-new.png" alt="image of gradient filled New icon" srcset="images/honeycomb-images/hc-svg/new-new.svg"/>
-              <figcaption>(Left) Before testing, I had the “New” icon a neutral grey, after (right) I changed it to a gradient of the Honeycomb palette.</figcaption>
-            </figure>
-            <figure>
-              <img src="images/honeycomb-images/sf-link.png" alt="image of product description with a learn more link" srcset="images/honeycomb-images/hc-svg/sf-link.svg"/>
-              <img src="images/honeycomb-images/sf-button.png" alt="image of product description with a learn more button" srcset="images/honeycomb-images/hc-svg/sf-button.svg"/>
-              <figcaption>(Left) Before, the CTAs on the homepage were plain links, after (right) I changed these to buttons to make them more obvious.</figcaption>
-            </figure>
-            <figure>
-              <img src="images/honeycomb-images/homepage-noscroll.jpg" alt="screenshot of hero with no scroll indicatior" srcset="images/honeycomb-images/hc-svg/homepage-noscroll.svg"/>
-              <img src="images/honeycomb-images/homepage-wscroll.jpg" alt="screenshot of hero with scroll indicatior" srcset="images/honeycomb-images/hc-svg/homepage-wscroll.svg"/>
-              <figcaption>(Left) Before, there was no visual indicator to users that they should scroll through the homepage so I added the bee trail element (right) to cue my users to keep scrolling.</figcaption>
-            </figure>
+        <div class="user-testing">
+          <h4>What I tested</h4>
+          <p>For the second round of testing I asked users to log in, upgrade their accounds to premium, and create a folder.</p>
+          <h4>What I learned</h4>
+          <p>All assigned tasks were completed correctly by users.  Some small tweaks were called for in order to make some elements even more obcious and clear.</p>
+          <h4>Changes I made to my design</h4>
+          <p>For the final mockups, I changed a few things, including changing the fill color of the New icon to make it stand out even more, adding a scroll indicator to the homepage, and  changed the CTA links on the homepage into buttons.</p>
+        </div>
+          <div class="changes">
+            <div class="change1">
+              <figure>
+                <img src="images/honeycomb-images/new-old.png" alt="image of grey New icon" srcset="images/honeycomb-images/hc-svg/new-old.svg"/>
+                <img src="images/honeycomb-images/new-new.png" alt="image of gradient filled New icon" srcset="images/honeycomb-images/hc-svg/new-new.svg"/>
+                <figcaption>Before testing, I had the “New” icon a neutral grey, after I changed it to a gradient of the Honeycomb palette.</figcaption>
+              </figure>
+            </div>
+            <div class="change2">
+              <figure>
+                <img src="images/honeycomb-images/sf-link.png" alt="image of product description with a learn more link" srcset="images/honeycomb-images/hc-svg/sf-link.svg"/>
+                <img src="images/honeycomb-images/sf-button.png" alt="image of product description with a learn more button" srcset="images/honeycomb-images/hc-svg/sf-button.svg"/>
+                <figcaption>Before, the CTAs on the homepage were plain links, after I changed these to buttons to make them more obvious.</figcaption>
+              </figure>
+            </div>
+            <div class="change3">
+              <figure>
+                <img src="images/honeycomb-images/homepage-noscroll.jpg" alt="screenshot of hero with no scroll indicatior" srcset="images/honeycomb-images/hc-svg/homepage-noscroll.svg"/>
+                <img src="images/honeycomb-images/homepage-wscroll.jpg" alt="screenshot of hero with scroll indicatior" srcset="images/honeycomb-images/hc-svg/homepage-wscroll.svg"/>
+                <figcaption>Before, there was no visual indicator to users that they should scroll through the homepage so I added the bee trail element to cue my users to keep scrolling.</figcaption>
+              </figure>
+          </div>
+          </div>
           <a href="https://invis.io/T8UUJLSP9YE" class="button">Link to InVision Prototype</a>
     </section>
+    <hr>
     <!-- final insights -->
     <section class="insights">
       <h2>Final Insights</h2>
-        <p>This project touched on many aspects of the design process, and it was gratifying to take something from idea to finished prototype. In some ways I feel that I was successful in delivering a product to my users that solved a problem they were having. </p>
-        <p>With every success, however, comes failure. If I could have done anything differently, I would have spent more time on the sketching portion of this project. Sketches are  invaluabe tools that make the difference between something that works alright, and something that is truly inspired. I also succumbed to scope creep in my design. My intent was to give my users all of the features they wanted (like having customized storage solutions), but these were determined to be low priority features for the MVP. The result was a prototype with underdeveloped visual and functional components. The overall design would have been more effective had I stuck to my high priority stories and ditched my original idea.</p>
-        <p>I am happy with the design I came up with, and users reported that they enjoyed the UI, but am sure that future iterations could be even better.</p>
+        <div class="insightful-txt">
+          <p>This project touched on many aspects of the design process, and it was gratifying to take something from idea to finished prototype. In some ways I feel that I was successful in delivering a product to my users that solved a problem they were having. </p>
+          <p>With every success, however, comes failure. If I could have done anything differently, I would have spent more time on the sketching portion of this project. Sketches are  invaluabe tools that make the difference between something that works alright, and something that is truly inspired. I also succumbed to scope creep in my design. My intent was to give my users all of the features they wanted (like having customized storage solutions), but these were determined to be low priority features for the MVP. The result was a prototype with underdeveloped visual and functional components. The overall design would have been more effective had I stuck to my high priority stories and ditched my original idea.</p>
+          <p>I am happy with the design I came up with, and users reported that they enjoyed the UI, but am sure that future iterations could be even better.</p>
+      </div>
       <a href="mailto:jade.elise.a@gmail.com" class="button">Questions? Contact me.</a>
       <a href="#top" style="color:#4B816D">Back to top</a>
     </section>
-  </main>
+  </section>
     <!-- footer -->
     <footer>
         <ul class="link-list">
