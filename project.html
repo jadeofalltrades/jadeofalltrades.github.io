@@ -58,15 +58,17 @@
         <p class="prob">Honeycomb is meant to address the problem of cloud storage services that are too hard to organize, aesthetically unappealing, and constantly asking users to sign up for premium memberships just to get more storage space. </p>
       <section class="solution">
         <h3>Solution</h3>
+        <div class="solution-inner">
         <div class="sol-desc">
           <div class="desc-txt">
             <h4>Honeycomb</h4>
               <p>This is Honeycomb. It has similarities to other cloud storage solutions, in that user can create whatever documents they want, or upload their own files. It is different in that the onus of organization is not put on the user–a frequent pain point among users surveyed.</p>
-              <p>It also gives users a lot of options for storage. Even though the majority of users use cloud storage for making documents, spreadsheets, and presentations, there are many who take notes, store photos, and create boards as well.</p>
+              <p>It also gives users several options for storage. Even though the majority of users use cloud storage for making documents, spreadsheets, and presentations, there are many who take notes, store photos, and create boards as well.</p>
               <p>Many users use multiple apps to achieve this. With Honeycomb, users can create different save destinations for all their different media, and organization happens first, so nothing gets lost.</p>
           </div>
           <img src="images/honeycomb-images/desktop-dashboard.jpg" alt="honeycomb dashboard" srcset="images/honeycomb-images/hc-svg/desktop-dashboard.svg"/>
         </div>
+      </div>
       </section>
     </section>
     <!-- research & discovery -->
@@ -82,7 +84,7 @@
         <li>75% of users want their service to be free to use.</li>
       </ul>
       <h3>Survey: Key Takeaways</h3>
-        <p>Research showed user frustration with: organizing, features, and cost. It also indicated that users wanted a service that gives them lots of options for storage, upload content from multiple devices, share and collaborate on content, and of course, is free to use. I let this data guide my decisions, because I wanted to make something that solved my users’ specific problems.</p>
+        <p>Research showed user frustration with organizing, features, and cost. It also indicated that users wanted a service that gives them lots of options for storage, upload content from multiple devices, share and collaborate on content, and of course, is free to use. I let this data guide my decisions, because I wanted to make something that solved my users’ specific problems.</p>
       <h3>Personas</h3>
         <p>I interviewed some users to see what motivates them, and developed  personas to help guide my choices.</p>
         <a href="images/PDF/user-personas.pdf" class="re-link">View personas ></a>
@@ -96,18 +98,22 @@
               <p>Colby is a student always eager to collaborate on a project. He doesn’t like to spend a ton of time combing through his cloud for files, and just wants one app for all his sharing and storage needs.</p>
           </div>
         </div>
-      <h3>Competitive Analysis</h3>
-        <p>I also took a look at popular apps on the market to see what they were getting right, and maybe a few things that they could do better.</p>
-        <a href="images/PDF/swot-charts.pdf" class="re-link">View SWOT charts ></a>
-        <div class="badges">
-          <img src="images/honeycomb-images/pinterest.png" alt="Pinterest badge" srcset="images/honeycomb-images/hc-svg/pinterest.svg" class="pin"/>
-          <img src="images/honeycomb-images/gdrive.png" alt="Google Drive badge" srcset="images/honeycomb-images/hc-svg/gdrive.svg" class="icon"/>
-          <img src="images/honeycomb-images/evernote.png" alt="Evernote badge" srcset="images/honeycomb-images/hc-svg/evernote.svg" class="icon"/>
+        <div class="comp-an">
+          <h3>Competitive Analysis</h3>
+            <p>I also took a look at popular apps on the market to see what they were getting right, and maybe a few things that they could do better.</p>
+            <a href="images/PDF/swot-charts.pdf" class="re-link">View SWOT charts ></a>
+            <div class="badges">
+              <img src="images/honeycomb-images/pinterest.png" alt="Pinterest badge" srcset="images/honeycomb-images/hc-svg/pinterest.svg" class="pin"/>
+              <img src="images/honeycomb-images/gdrive.png" alt="Google Drive badge" srcset="images/honeycomb-images/hc-svg/gdrive.svg" class="icon"/>
+              <img src="images/honeycomb-images/evernote.png" alt="Evernote badge" srcset="images/honeycomb-images/hc-svg/evernote.svg" class="icon"/>
+            </div>
+            <div class="key-takeaways">
+              <h3>Key Takeaways</h3>
+              <p>Pinterest, while not a typical “cloud storage solution” does save user’s information in the cloud, and is a popular method of saving and sharing content on the Internet. While users are limited in the content they can create with Pinterest, saved content is organized prior to saving</p>
+              <p>Google Drive offers users the most in content creation and storage space, and while organization is easy to accomplish, users need to actively engage in organizing their files.</p>
+              <p>Evernote follows a freemium model, and while the notetaking and content saving app does offer key functionality, the normal non-paying regular user would not find the free membership to be useful in the long term.</p>
+            </div>
         </div>
-      <h3>Key Takeaways</h3>
-        <p>Pinterest, while not a typical “cloud storage solution” does save user’s information in the cloud, and is a popular method of saving and sharing content on the Internet. While users are limited in the content they can create with Pinterest, saved content is organized in a snap.</p>
-        <p>The strongest competitor I researched, Google Drive offers users the most in content creation and storage space, and while organization is easy to accomplish, users need to actively engage in organizing their files.</p>
-        <p>Evernote follows a freemium model, and while the notetaking and content saving app does offer key functionality, the normal non-paying regular user would not find the free membership to be useful in the long term.</p>
     </section>
     <hr>
     <!-- information architecture -->
@@ -129,7 +135,7 @@
           </ul>
           <h3>User Flows</h3>
             <div class="userflow">
-            <p>After determining what user stories would make up my MVP I set out to map the user flows, first on paper, and then in Figma. During this process I decided that the simplest way to satisfy user goals would be to incorporate modal screens into my design.</p>
+            <p>After determining what user stories would make up my MVP I set out to map the user flows, first on paper, and then in Figma. During this process I found that the simplest way to satisfy user goals would be to incorporate modal screens into my design.</p>
               <figure>
                 <img src="images/honeycomb-images/userflow.jpg" alt="example of user flow"/>
                 <figcaption>In this flow, users are saving photos to the app from their phone. </figcaption>
@@ -137,27 +143,35 @@
             </div>
           <section class="sandwf">
             <h3>Sketches & Wireframes</h3>
-              <p>I started sketching my ideas out onto paper for rapid iteration.  When I was happy with them, I moved into Figma to draw up quick wireframes for prototyping. </p>
+              <p>I started sketching my ideas out onto paper for rapid iteration, then moved into Figma to turn them into wireframes for prototyping. </p>
               <img src="images/honeycomb-images/hc-sketches.jpg" alt="initial sketches"/>
               <img src="images/honeycomb-images/dashboardwf.png" alt="wireframe showing dashboard" srcset="images/honeycomb-images/hc-svg/dashboardwf.svg"/>
-              <img src="images/honeycomb-images/Group-202.png" alt="wireframe showing homepage" srcset="images/honeycomb-images/Group-202.svg"/>
+              <img src="images/honeycomb-images/Group-202.png" alt="wireframe showing homepage" srcset="images/honeycomb-images/hc-svg/Group-202.svg"/>
           </section>
           <h3>User Testing</h3>
           <div class="user-testing">
-            <h4>What I tested</h4>
-            <p>Users were asked to make an account, create a piece of content, and then organize that piece of content.</p>
-            <h4>What I learned</h4>
-            <p>Users had difficulty differentiating between the login and signup flow. Some icons were difficult for users to understand without labels. </p>
-            <h4>Changes I made to my design</h4>
-            <p>In later iterations I completely separated the login and signup flows on the homepage and reorganized the page hierarchy to prioritize the signup. I also made sure every icon was assigned a label.</p>
+            <div class="user-testing-inner">
+              <h4>What I tested</h4>
+              <p>Users were asked to make an account, create a piece of content, and then organize that piece of content.</p>
+            </div>
+            <div class="user-testing-inner">
+              <h4>What I learned</h4>
+              <p>Users had difficulty differentiating between the login and signup flow. Some icons were difficult for users to understand without labels. </p>
+            </div>
+            <div class="user-testing-inner">
+              <h4>Changes I made to my design</h4>
+              <p>In later iterations I completely separated the login and signup flows on the homepage and reorganized the page hierarchy to prioritize the signup. I also made sure every icon was assigned a label.</p>
+            </div>
           </div>
     </section>
     <hr>
     <!-- brand development -->
     <section>
       <h2>Brand Development</h2>
-        <p>For branding, I took a look at both my target market (females 25-34) and my competitors to see what would appeal to users. After thinking a lot about possible names, I settled on Honeycomb. I wanted to avoid overused storage tropes such as clouds and boxes, in hopes it would make my product stand out more.</p>
-        <p>After exploring my logo options through sketches and digital renderings, I picked a simple logo and type treatment for a straightforward and contemporary mark.</p>
+        <div class="brand-intro">
+          <p>For branding, I took a look at both my target market (females 25-34) and my competitors to see what would appeal to users. After brainstorming and mindmapping potential brand names, I settled on Honeycomb. I wanted to avoid overused storage tropes such as clouds and boxes, in hopes it would make my product stand out more.</p>
+          <p>After exploring my logo options through sketches and digital renderings, I picked a simple logo and type treatment for a straightforward and contemporary mark.</p>
+        </div>
         <div class="brand">
           <img src="images/honeycomb-images/hc-logo-sketch1.jpg" alt="image of logo sketches"/>
           <img src="images/honeycomb-images/hc-logo-sketch2.JPG" alt="image of logo sketches"/>
@@ -192,12 +206,18 @@
         </section>
         <h3>Second Round User Testing</h3>
         <div class="user-testing">
-          <h4>What I tested</h4>
-          <p>For the second round of testing I asked users to log in, upgrade their accounds to premium, and create a folder.</p>
-          <h4>What I learned</h4>
-          <p>All assigned tasks were completed correctly by users.  Some small tweaks were called for in order to make some elements even more obcious and clear.</p>
-          <h4>Changes I made to my design</h4>
-          <p>For the final mockups, I changed a few things, including changing the fill color of the New icon to make it stand out even more, adding a scroll indicator to the homepage, and  changed the CTA links on the homepage into buttons.</p>
+          <div class="user-testing-inner">
+            <h4>What I tested</h4>
+            <p>For the second round of testing I asked users to log in, upgrade their accounds to premium, and create a folder.</p>
+          </div>
+          <div class="user-testing-inner">
+            <h4>What I learned</h4>
+            <p>All assigned tasks were completed correctly by users.  Some small tweaks were called for in order to make some elements even more obvious and clear.</p>
+          </div>
+          <div class="user-testing-inner">
+            <h4>Changes I made to my design</h4>
+            <p>For the final mockups, I changed a few things, including changing the fill color of the New icon to make it stand out even more, adding a scroll indicator to the homepage, and  changed the CTA links on the homepage into buttons.</p>
+          </div>
         </div>
           <div class="changes">
             <div class="change1">
@@ -229,10 +249,11 @@
     <section class="insights">
       <h2>Final Insights</h2>
         <div class="insightful-txt">
-          <p>This project touched on many aspects of the design process, and it was gratifying to take something from idea to finished prototype. In some ways I feel that I was successful in delivering a product to my users that solved a problem they were having. </p>
-          <p>With every success, however, comes failure. If I could have done anything differently, I would have spent more time on the sketching portion of this project. Sketches are  invaluabe tools that make the difference between something that works alright, and something that is truly inspired. I also succumbed to scope creep in my design. My intent was to give my users all of the features they wanted (like having customized storage solutions), but these were determined to be low priority features for the MVP. The result was a prototype with underdeveloped visual and functional components. The overall design would have been more effective had I stuck to my high priority stories and ditched my original idea.</p>
-          <p>I am happy with the design I came up with, and users reported that they enjoyed the UI, but am sure that future iterations could be even better.</p>
-      </div>
+          <p>This project touched on many aspects of the design process, and it was gratifying to take something from idea to finished prototype. In some ways I feel that I was successful in delivering a product to my users that solved a problem they were having, and I learned a lot in the process. </p>
+          <p>Success wouldn't truly be success without some failure, however. If I could reapproach this project differently, I would have spent more time on the sketching portion of this project. Sketches are  invaluable tools that make the difference between something that works alright, and something that is truly inspired. I also succumbed to scope creep in my design. My intent was to give my users all of the features they wanted (like having customized storage solutions), but these were determined to be too low priority to develop for the MVP. I continued to flesh these ideas out, despite having already decided to leave them out of the MVP. The result was a prototype with underdeveloped functional components as I tried my hardest to make it all work. I think the biggest lesson I learned from this project is that as a designer, you need to recognize when to let an idea go, and focus on what will truly enrich a user's experience. </p>
+        </div>
+    </section>
+    <section class="end-links">
       <a href="mailto:jade.elise.a@gmail.com" class="button">Questions? Contact me.</a>
       <a href="#top" style="color:#4B816D">Back to top</a>
     </section>

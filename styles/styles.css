@@ -120,6 +120,7 @@ a {
   text-decoration:none;
 }
 
+
 #abt h2{
   font-size: 2rem;
   font-weight:600;
@@ -152,9 +153,19 @@ a {
 .about-text > p{
   line-height:145%;
 }
+.about{
+  margin:auto;
+  width:80%;
+}
 
 .brand img {
   padding:2rem 1.6rem;
+}
+.brand-intro, .prob, .solution p, .results li, .discovery p, .ia li, .user-testing-inner, .insightful-txt p, .comp-an p, .userflow p{
+  margin:auto;
+  max-width:51rem;
+  text-align:center;
+  width:90%;
 }
 
 .hifi img{
@@ -168,9 +179,13 @@ a {
 max-width:50%;
 margin:auto;
 display:flex;
-flex-wrap:wrap;
+flex-direction:column;
+justify-content:space-around;
 align-items:center;
-vertical-align:middle;
+}
+.icon, .pin {
+  display:inline-block;
+  vertical-align:middle;
 }
 .badges img {
   margin:1rem 2rem;
@@ -206,7 +221,10 @@ vertical-align:middle;
   width:75%;
 }
 .solution img {
-  margin: 2rem 0;
+  margin: 2rem auto;
+}
+.discovery li, .ia li {
+  list-style:disc;
 }
 .discovery > .icon{
   margin-bottom:3rem;
@@ -227,7 +245,17 @@ p.dm-sans{
   font-size:1.8rem;
   font-weight:600;
 }
-
+.end-links {
+  padding:7.5rem 1.6rem;
+  margin:auto;
+  display:flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.end-links a {
+  margin-bottom: 2rem;
+}
 figcaption{
   font-size:1.4rem;
 }
@@ -276,7 +304,9 @@ h4{
   padding-top: 3rem;
   padding-bottom: 0.5rem;
 }
-
+.headline, .sub-head, .by-line, .hero .re-link {
+  margin-left:3rem;
+}
 #hon{
   text-align:center;
 }
@@ -339,10 +369,6 @@ img.clr {
   margin:3.6rem 0 2.4rem 0;
 }
 
-.insights p {
-  text-align:left;
-}
-
 .jade{
   width:50%;
   margin:2.5rem 20rem 3.6rem 0;
@@ -355,10 +381,6 @@ img.clr {
   margin: 0 0.25rem;
 }
 
-.proj-main-wrapper p {
-  padding:0.8rem;
-  margin: 0 1.6rem;
-}
 
 .proj-main-wrapper ul{
   font-size:1.6rem;
@@ -400,18 +422,28 @@ p{
   font-weight: 300;
   font-size:1.6rem;
   line-height:1.45;
-  margin:1.6rem 0;
+  margin:1.6rem auto;
 }
 .per {
   padding:5.2rem;
 }
+.proj-hero, .hero-desc,{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-around;
+}
 .proj-hero img {
+  margin: 2rem 0;
   padding:2rem 3.2rem 0 3.2rem;
 }
+
 
 .proj-hero p {
   padding:0 2.4rem 2.4rem 2.4rem;
   margin-bottom: 1.5rem;
+  vertical-align:middle;
+  display:inline-block;
 }
 
 .proj-hero img, .changes img, .overview img, .ia img, .brand img, .hifi img, .insights img {
@@ -425,15 +457,11 @@ p{
   width:100%;
 }
 
-.proj-hero img {
-  margin: 2rem 0;
-}
-
 .re-link {
   font-weight:600;
   padding: 1rem 1rem 1rem 0;
 }
-.results li {
+.results li, .ia li {
   padding: 0.5rem 0;
   text-align:left;
 }
@@ -450,9 +478,8 @@ section.honeycomb p {
   padding:3rem 0;
 }
 
-.solution p {
+.solution p, .insightful-txt p, .key-takeaways p {
   text-align:left;
-  padding: 0.75rem 1.6rem;
   margin-bottom: 2rem;
 }
 .sm-list {
@@ -488,31 +515,87 @@ ul.link-list{
 }
 .user-testing {
   text-align:left;
-}
-.user-testing h4 {
-  margin-left:2.4rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:flex-start;
 }
 
 .work-preview{
   margin:5rem 3.75rem;
   text-align:center;
 }
-/*@media rules */
-@media screen and (min-width: 476px){
 
-  #abt h1{
-    margin-right:40rem;
-  }
-  #abt .hero{
-    margin-left:5rem;
+/*@media rules */
+
+@media screen and (min-width: 476px){
+  .abt-hero{
+    align-items: flex-start;
     display:flex;
     flex-direction:column;
     justify-content: center;
     text-align:center;
+    }
+  .abt-hero p{
+    font-size:1.2rem;
+    font-weight:400;
+    text-align:left;
   }
-  .about-text{
-    width:75%;
-    margin-left:5rem;
+  .abt-hero p{
+    width:70%;
+  }
+  #abt .re-link{
+    width:auto;
+  }
+  .by-line{
+    padding:0 20rem 2rem 0;
+  }
+  .sol-desc, .desc-txt{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin:auto;
+  }
+  .proj-hero, .hero-desc {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin:auto;
+  }
+  .desc-txt h4 {
+    display:inline-block;
+    align-self:flex-start;
+    margin:auto;
+  }
+  #abt footer {
+    margin-top:10rem;
+  }
+  figcaption{
+    width:50%;
+    margin:auto;
+  }
+  .headline{
+    padding:3rem 24rem 3rem 0;
+  }
+  .hero {
+    background-image:url("../images/SVG/hero-bg.svg");
+    position:inherit;
+  }
+  p, #hon li {
+    line-height:150%;
+    max-width:51rem;
+  }
+  #hon li {
+    margin:auto;
+  }
+  .insights a{
+    margin:2.4rem auto;
+  }
+  .honeycomb {
+    height:40rem;
+    width:50rem;
   }
   hr {
      display:block;
@@ -524,64 +607,46 @@ ul.link-list{
   }
   .insights a {
     display:block;
-    margin:2.4rem auto;
-
-  }
-  .by-line{
-    padding:0 20rem 2rem 0;
-  }
-  figcaption{
-    width:50%;
-    margin:auto;
-  }
-  .headline{
-    padding:3rem 24rem 3rem 0;
-}
-  .hero {
-    background-image:url("../images/SVG/hero-bg.svg");
-    position:inherit;
-  }
-  .honeycomb {
-    height:40rem;
-    width:50rem;
   }
   .jade {
-    width:30%;
-    margin:2.5rem 40rem 3.6rem 0;
+    margin:2.5rem 40rem 0.9rem 0;
   }
-  #hon p, #hon li {
-    line-height:150%;
-    width:75%;
-    margin:2.4rem auto;
+  .lg-hon{
+    display:none;
   }
-  #hon li {
-    line-height:150%;
-    width:75%;
-    margin:auto;
-  }
-.lg-hon{
-  display:none;
-}
 
   section.honeycomb p {
     padding:1.6rem 1rem;
   }
-  .user-testing h4 {
-    margin-left:10.4rem;
+  .user-testing-inner{
+    align-items: flex-start;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align:left;
+  }
+  .user-testing-inner p {
+    align-self:flex-start;
   }
   .work-preview{
     margin:8rem 3.75rem;
   }
-
 }
 
+
 @media screen and (min-width:769px){
+
   /* navigation */
+
     nav {
-      height:12rem;
+      height:10rem;
     }
     .nav-links {
       padding-top:5rem;
+    }
+    .nav-links a{
+      font-size:2.3rem;
+      margin-right:2rem;
     }
     .top-logo{
       width:10%;
@@ -589,89 +654,81 @@ ul.link-list{
       margin-left:16px;
     }
     /* footer styles*/
-      footer {
-        display:flex;
-        flex-direction:row;
-        justify-content: space-around;
-        align-items:center;
-      }
-      .copyright{
-        display:inline-block;
-        line-height:1rem;
-        margin:0;
-        order:1;
-        padding-top:1.5rem;
-        text-align:left;
-      }
+
+    .copyright{
+      display:inline-block;
+      line-height:1rem;
+      margin:0;
+      order:1;
+      padding-top:1.5rem;
+      text-align:left;
+    }
+    footer {
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+      align-items:center;
+    }
+
       ul.link-list{
         display:inline-block;
         order:2;
         text-align:right;
       }
 
-/*about page */
+      /*about page */
 
-.about-text{
-  margin-left:12rem;
-}
-  #abt {
-    display:grid;
-  }
-  #abt h1 {
-    margin-left:12rem;
-  }
-  .about-text {
-    max-width:42%;
-    float:left;
-  }
+
+      .about {
+        padding-top:12.5rem;
+      }
+      #abt h1 {
+        margin-bottom:4rem;
+      }
+      .about-text {
+      max-width:42%;
+
+    }
   .abt-hero{
     display:flex;
-    width:30%;
+    width:35%;
     float:right;
     flex-direction:column;
     text-align:center;
     align-items: center;
-    margin-right:10rem;
   }
-
   .abt-hero p {
     max-width: 80%;
   }
-  .about{
-    margin-top:11rem;
-  }
-
   #abt .re-link{
     padding:0;
     text-align:left;
     width:auto;
   }
   .jade {
-    width:75%;
+    width:95%;
     margin:auto;
   }
 /*homepage*/
-
-  .by-line{
+ .by-line{
     font-size:2.3rem;
     line-height: 135%;
     padding-right:29rem;
+    max-width: 85rem;
   }
 
   .hero{
     padding:12rem 0;
     background-image:url("../images/SVG/hero-bg.svg");
   }
+
   .work-preview{
-    display:inline-block;
-  }
-  .work-preview{
-    margin:10rem 3.75rem;
+    display:block;
+    margin: 10rem auto;
+    max-width:110rem;
+    width:100%;
   }
   /* project */
-  .discovery > .per {
-    width:30%;
-  }
 
   .badges img {
     width:25%;
@@ -679,13 +736,64 @@ ul.link-list{
   .badges >.pin{
     width:10%;
   }
-
-  #hon li {
-    max-width:70%;
-    margin:auto;
-
+  .brand-elements, .changes {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:flex-start;
+    margin: 4rem 0;
+  }
+  .clr-pal p{
+    text-align:left;
+    margin:0;
+  }
+  .clr-pal-inner, .typefaces{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    width:50%;
+  }
+  .clr-pal-inner {
+    align-items:flex-start;
+    margin-left:7.2rem;
   }
 
+  .clr-pal img {
+    padding:0;
+  }
+  .desc {
+    width:49%;
+    display:inline-block;
+    text-align:left;
+    vertical-align: middle;
+  }
+  .desc-txt{
+    text-align:left;
+    min-width:70%;
+  }
+  .desc-txt h4{
+    margin:auto;
+  }
+
+  .discovery p, .ia p, .brand p, .insights p, .prob p{
+    max-width:51rem;
+    margin:auto;
+  }
+  .discovery > .per {
+    width:30%;
+  }
+  .end-links a {
+    margin-top: 4rem;
+  }
+  .flwr{
+    display: none;
+  }
+  #hon li {
+    max-width:50%;
+    margin:auto;
+    margin-bottom:1.6rem;
+  }
   #hon .button{
     margin:auto;
     padding: 1.6rem 3rem;
@@ -699,152 +807,94 @@ ul.link-list{
     justify-content: space-around;
     align-items:center;
   }
-  section.honeycomb p{
-    padding:1.6rem 0;
-    margin:0 1.6rem 3rem 0;
+
+  .headline{
+    font-size:4rem;
+    padding-bottom:1rem;
+    line-height:120%;
   }
-  .flwr{
-    display: none;
+  .hero-desc > img, .hero-desc p {
+    padding:1.2rem;
+    margin:auto;
   }
+  .hero-desc {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width:50%;
+  }
+  .hero-desc {
+    margin-bottom:4rem;
+  }
+
+  .insightful-txt{
+    margin-bottom: 5rem;
+  }
+  .insights{
+    margin-bottom:10rem;
+  }
+
   .lg-hon {
     width:40%;
     display:inline-block;
     vertical-align:middle;
     margin:auto;
   }
-  .desc {
-    width:49%;
-    display:inline-block;
-    text-align:left;
-    vertical-align: middle;
-  }
-  .clr-pal p{
-    text-align:left;
-    margin:0;
-  }
-  .insights a {
-    display:inline-block;
-    margin:5rem 40rem;
-  }
-
-  .nav-links a{
-    font-size:1.15rem;
-    margin-right:2rem;
-  }
-  .headline, .sub-head, .by-line, .hero .re-link {
-    margin-left:3rem;
-  }
-  .headline{
-    font-size:4rem;
-    padding-bottom:1rem;
-    line-height:120%;
-  }
 
   .marissa, .colby{
     width:45%;
     margin-bottom:7.5rem;
   }
-
-
-  .results li, .user-stories li{
-    padding:0 8rem;
+  .overview img, .discovery img, .ia img, .brand img, .insights img {
+     max-width:80%;
+   }
+   .proj-hero, .solution, .sandwf, .hifi {
+     padding: 10rem 0;
+   }
+  .proj-hero img {
+    max-width:50%;
   }
+  .proj-hero p{
+    padding-bottom:4.2rem;
+  }
+
   .sub-head{
     color:#F9F9F9;
     padding-bottom: 3rem;
     font-size:3rem;
   }
-
-
-  .hero-desc {
-    display:inline-block;
-    text-align:center;
-    width:50%;
-  }
-
-  .hero-desc {
-    margin-bottom:4rem;
-  }
-
-
-  .proj-hero img {
-    max-width:50%;
-  }
-  .hero-desc > img {
-    padding:0rem;
-  }
-  .proj-hero p{
-    padding-bottom:4.2rem;
+  section.honeycomb p{
+    padding:1.6rem 0;
+    margin:0 1.6rem 3rem 0;
   }
   .sol-desc {
     display:flex;
     text-align:center;
+
   }
   .sol-desc >img {
-    padding:5rem;
-  }
-  .solution {
-    flex-wrap:wrap;
-  }
-  .solution p {
-    padding: 0 1.6rem;
-  }
-  .solution h4 {
-    margin-left:8rem;
-  }
-  .desc-txt{
-    text-align:left;
-    max-width:50%;
-  }
-  .discovery p, .ia p, .brand p, .insights p, .prob {
-    max-width:75%;
     margin:auto;
+    vertical-align:middle;
   }
-  .insightful-txt{
-    margin-bottom: 5rem;
-  }
-  .personas, .proj-hero, .solution,  .userflow, .badges {
+
+  .personas, .proj-hero, .solution-inner,  .userflow, .badges {
     display:flex;
     flex-direction:row;
     justify-content: space-around;
     align-items:center;
   }
-  .brand-elements, .changes {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
+  .personas {
     align-items:flex-start;
-    margin: 4rem 0;
-  }
-
-  .clr-pal-inner, .typefaces{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
-    width:50%;
   }
   .typefaces{
     align-items:center;
   }
-  .clr-pal-inner {
-    align-items:flex-start;
-    margin-left:7.2rem;
-  }
-  .clr-pal img {
-    padding:0;
-  }
   .typefaces p {
-    width:50%;
+    max-width: 51rem;
   }
- .overview img, .discovery img, .ia img, .brand img, .insights img {
-    max-width:50%;
-  }
-.proj-hero, .solution, .sandwf, .hifi {
-  padding: 10rem 0;
-}
-.user-testing h4 {
-  margin-left:13.6rem;
+.user-testing{
+  margin:auto;
+  max-width:51rem;
 }
 .userflow p {
   max-width:45%;
