@@ -44,47 +44,48 @@ jade #6aa991*/
   font-family:"Mermaid";
 }
 /* colors */
-a, .button, .by-line, .copyright, .headline, #hon .button, .link-list i, .nav-links {
+a, .button, .copyright, #hon .button, .link-list i, .nav-links {
   color:#F9F9F9;
 }
 
-#abt, #hon{
-  background:#ffffff;
+.by-line, .headline, .sub-head {
+  color:#333734;
 }
+
+/*#abt, #hon{
+  background:#ffffff;
+}*/
 #abt a, #abt h2, #hon a, #hon h2 {
   color: #333734;
 }
-h2, h4, #hon h3, #hon .re-link, #abt .re-link, .shortcut {
+h2, h4, #hon h3, .shortcut {
   color:#4B816D;
 }
 
-.honeycomb, .proj-hero, .solution, .sandwf, .hifi{
+.honeycomb, .solution, .sandwf, .hifi{
   background-color:	#F9F9F9;
-  box-shadow:0px 4px 2px #CECFCE;
+  box-shadow:9px 9px 16px #B7B8B7, -9px -9px 16px #ffffff;
+
 }
-nav a:link, nav a:visited {
-  color:#F9F9F9;
-}
-#abt a:link, #abt a:visited, #hon nav a:link, #hon nav a:visited{
+nav a:link, nav a:visited{
   color:#333734;
 }
-#abt a:hover, #abt a:active,#abt .re-link:link, #abt .re-link:visited, #abt .re-link:active, #hon nav a:hover, #hon nav a:active, nav a:hover{
+nav a:active {
+  color:#9D677A;
+}
+nav a:hover{
   color:#4B816D;
 }
-#abt .re-link:hover{
-  color:#71AD96;
-}
-
 /*typography*/
 a, h1, h2, h4, .nav-links {
   font-family:"Moon-Light", "Moon", "moonlight", sans-serif;
 }
 
-#abt h2, .by-line, .e-link, h3, li, p, .re-link {
+#abt h2, .by-line, .e-link, h3, li, p{
   font-family:"IBM Plex Serif", Georgia, serif;
 }
 
-.button, .copyright, #hon h3 {
+.button, .copyright, #hon h3, .re-link {
   font-family: "Moon-Bold", "moonlight";
   font-weight:600;
 }
@@ -108,34 +109,21 @@ a {
   font-size:1.4rem;
   text-decoration:none;
 }
-
-
 #abt h2{
   font-size: 2rem;
   font-weight:600;
   margin-bottom:3.6rem;
 }
-
 #abt h1{
   font-size:2.8rem;
   margin:2.5rem 0;
 }
-
 #abt h3{
   margin:2.4rem 0 1rem 0;
 }
-
 #abt h4 {
   margin:6.4rem 0 2rem 0;
 }
-
-#abt .re-link{
-  display:inline-block;
-  width:75%;
-  font-size:2rem;
-  margin-bottom:3.6rem;
-}
-
 .about-text{
   margin-bottom:10rem;
 }
@@ -146,31 +134,29 @@ a {
   margin:auto;
   width:80%;
 }
-
 .brand img {
   padding:2rem 1.6rem;
 }
 .brand-intro, .prob, .solution p, .results li, .discovery p, .ia li, .user-testing-inner, .insightful-txt p, .comp-an p, .userflow p{
-  margin:auto;
+  margin:3rem auto;
   max-width:51rem;
   text-align:center;
   width:90%;
 }
-
 .hifi img{
   padding:2rem 1.6rem;
 }
-
 .sandwf img{
   padding:2rem 1.6rem;
 }
 .badges{
-max-width:50%;
-margin:auto;
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-align-items:center;
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  margin:auto;
+  max-width:50%;
+  padding-top:5rem;
 }
 .icon, .pin {
   display:inline-block;
@@ -181,25 +167,24 @@ align-items:center;
 }
 .button{
   background-color:#4B816D;
-  box-shadow:0px 4px 4px #CECFCE;
+  box-shadow:0px 4px 4px #B7B8B7;
   font-size:1.4rem;
   padding: 1.7rem 5rem;
   width:265px;
 }
-
 .by-line {
   font-size: 1.8rem;
   font-weight:500;
   line-height:2.1rem;
+  margin-bottom:3rem;
   padding-bottom: 1rem;
   padding-right:2rem;
 }
-
 .container{
   height:100vh;
   margin:auto;
   width:100%;
-  background-image: linear-gradient(#333734,#3C403D, #F9F9F9 90%);
+  background-color:#F9F9F9;
   }
 
 .copyright{
@@ -231,7 +216,6 @@ align-items:center;
 p.dm-sans{
   padding-bottom:2rem;
 }
-
 .e-link {
   font-size:1.8rem;
   font-weight:600;
@@ -258,19 +242,16 @@ figure{
 figure img {
   margin:0.8rem 1.2rem;
 }
-
 .flwr{
   height:9.443rem;
   width:9.024rem;
   margin:3rem;
 }
-
 footer {
     background-color: #333734;
     padding:2rem;
     width:100%;
 }
-
 h1{
   font-size:4rem;
   text-align:left;
@@ -294,7 +275,7 @@ h4{
   padding-top: 3rem;
   padding-bottom: 0.5rem;
 }
-.headline, .sub-head, .by-line, .hero .re-link {
+.headline, .sub-head, .by-line{
   margin-left:3rem;
 }
 
@@ -321,22 +302,20 @@ h4{
   font-size:1.8rem;
 }
 
-#hon .re-link{
-  display:inline-block;
-  width:75%;
-  font-size:1.8rem;
-  margin-bottom:3.6rem;
-}
-
 .honeycomb{
+  background-color:#f9f9f9;
+  border-radius:35px;
   display:inline-block;
   margin: 0 auto;
   height:45rem;
   width:30rem;
   max-width:99%;
 }
-
+.honeycomb:hover{
+  box-shadow:5px 5px 10px #71ad96, -5px -5px 10px #ffffff;
+}
 html{
+  background-color:#F9F9F9;
   font-size:10px;
   height:100vh;
 }
@@ -366,20 +345,16 @@ img.clr {
   display:inline;
   margin: 0 0.25rem;
 }
-
-
 .proj-main-wrapper ul{
   font-size:1.6rem;
   margin:0 1.6rem;
 }
 nav {
+  box-shadow: 0px 4px 30px #AB8A8D;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
-}
-.hero .re-link {
-  color:#71AD96;
 }
 .nav-links{
   clear:right;
@@ -387,21 +362,19 @@ nav {
   text-align:center;
   padding:3rem 1rem 3rem 4rem;
 }
-
 .nav-links a {
   padding:0.5rem;
 }
-
 .overview, .brand, .ia {
   margin: 2rem 0;
 }
-
 p{
   font-weight: 300;
   font-size:1.6rem;
   line-height:1.45;
   margin:1.6rem 0;
 }
+
 .per {
   padding:5.2rem;
 }
@@ -415,47 +388,48 @@ p{
   margin: 2rem 0;
   padding:2rem 3.2rem 0 3.2rem;
 }
-
-
 .proj-hero p {
   padding:0 2.4rem 2.4rem 2.4rem;
   margin-bottom: 1.5rem;
   vertical-align:middle;
   display:inline-block;
 }
-
 .proj-hero img, .changes img, .overview img, .ia img, .brand img, .hifi img, .insights img {
   width:80%;
 }
-
 .proj-hero, .solution, .sandwf, .hifi {
   background-size:cover;
   margin-bottom:5rem;
   padding:3rem 0;
   width:100%;
 }
-
 .re-link {
+  background-color: #FFF;
+  border: 3px solid #AD9E7A;
+  color: #333734;
+  font-size:1.4rem;
   font-weight:600;
-  padding: 1rem 1rem 1rem 0;
+  padding: 1.7rem 5rem;
+  margin: 5rem 3rem;;
+  width: 265px;
+}
+a.button:hover, a.re-link:hover {
+    box-shadow: 4px 4px 10px #B7B8B7;
 }
 .results li, .ia li {
   padding: 0.5rem 0;
   text-align:left;
 }
-
 section.honeycomb p {
   font-size:1.6rem;
   line-height:150%;
   margin:0 1.6rem 4rem 1.6rem;
   padding: 1.6rem;
 }
-
 .solution{
   margin: 6rem 0;
   padding:3rem 0;
 }
-
 .solution p, .insightful-txt p, .key-takeaways p {
   text-align:left;
   margin-bottom: 2rem;
@@ -465,11 +439,9 @@ section.honeycomb p {
   display:inline-flex;
 }
 .sub-head{
-  color:#F9F9F9;
   padding-bottom: 3rem;
   font-size:2rem;
 }
-
 .lg-logo, .lg-hon {
   display:none;
 }
@@ -484,7 +456,6 @@ section.honeycomb p {
 ul {
   text-align:left;
 }
-
 .user-stories li {
   padding:0.5rem 1.6rem;
 }
@@ -495,11 +466,9 @@ ul {
   justify-content:space-around;
   align-items:flex-start;
 }
-
 .work-preview{
   margin:5rem 3.75rem;
 }
-
 /*@media rules */
 
 @media screen and (min-width: 476px){
@@ -532,7 +501,9 @@ ul {
     flex-direction:row;
   }
   .by-line{
-    padding:0 20rem 2rem 0;
+    padding:0 10rem 2rem 0;
+    margin-bottom:4rem;
+    font-size:1.6rem;
   }
   .clr-pal-inner p, .typefaces p {
     align-self:center;
@@ -560,10 +531,12 @@ ul {
     width:50%;
   }
   .headline{
-    padding:3rem 24rem 3rem 0;
+    padding:3rem 0;
+    font-size:3.2rem;
   }
   .hero {
-    background-image:url("../images/SVG/hero-bg.svg");
+    padding:2rem 0;
+    margin:5rem 0;;
     position:inherit;
   }
   p, #hon li {
@@ -598,6 +571,9 @@ ul {
 
   section.honeycomb p {
     padding:1.6rem 1rem;
+  }
+  .sub-head{
+    font-size:2.4rem;
   }
   .user-testing-inner{
     text-align:left;
@@ -676,11 +652,6 @@ ul {
       .abt-hero p {
         max-width: 80%;
       }
-      #abt .re-link{
-        padding:0;
-        text-align:left;
-        width:auto;
-      }
       .jade {
         width:95%;
         margin:auto;
@@ -699,16 +670,17 @@ ul {
     margin:auto;
   }
   .headline{
-    font-size:4rem;
+    font-size:4.8rem;
     padding-bottom:1rem;
     line-height:120%;
   }
   .hero{
-    padding:12rem 0;
-    background-image:url("../images/SVG/hero-bg.svg");
+    background:url("../images/PNG/july-hero.png") no-repeat right center;
+    padding:10rem 0 50rem 0;
+    margin:5rem auto;
+    max-width:1440px;
   }
   .sub-head{
-    color:#F9F9F9;
     padding-bottom: 3rem;
     font-size:3rem;
   }
@@ -770,7 +742,8 @@ ul {
 
   .discovery p, .ia p, .brand p, .insights p, .prob p, .user-testing{
     max-width:51rem;
-    margin:auto;
+    margin:3rem auto;
+    padding-bottom:1rem;
   }
   .discovery > .per {
     width:30%;
@@ -782,7 +755,7 @@ ul {
     display: none;
   }
   #hon li {
-    max-width:50%;
+    max-width:51rem;
     margin-bottom:1.6rem;
   }
   #hon .button{
