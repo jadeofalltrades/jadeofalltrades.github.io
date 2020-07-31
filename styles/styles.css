@@ -124,8 +124,11 @@ a {
 #abt h4 {
   margin:6.4rem 0 2rem 0;
 }
+#abt .re-link {
+  margin: 5rem 3rem 5rem 0;
+}
 .about-text{
-  margin-bottom:10rem;
+  margin:5rem 0 10rem 0;
 }
 .about-text > p{
   line-height:145%;
@@ -437,6 +440,7 @@ section.honeycomb p {
 .sm-list {
   color:#333734;
   display:inline-flex;
+  margin:0 5rem 3.6rem 0;
 }
 .sub-head{
   padding-bottom: 3rem;
@@ -472,6 +476,12 @@ ul {
 /*@media rules */
 
 @media screen and (min-width: 476px){
+  .about {
+    margin:5rem auto;
+  }
+  .about-text {
+    margin-bottom:10rem;
+  }
   .abt-hero, .clr-pal-inner, .desc-txt, figure, .hero-desc, .proj-hero, .sol-desc, .typefaces, .user-testing-inner{
     display:flex;
     flex-direction:column;
@@ -495,6 +505,7 @@ ul {
     width:70%;
   }
   #abt .re-link{
+    margin:2rem 0 2rem 0;
     width:auto;
   }
   .badges{
